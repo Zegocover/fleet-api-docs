@@ -28,7 +28,6 @@ HTTP 201
             "postCode": "E1 123",
         "countryCode": "GB",
 }
-}
 ```
 
 ## GET /v2/fleet/company/

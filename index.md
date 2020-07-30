@@ -1,5 +1,3 @@
-On these pages you will find information on how to interact with Zego’s Fleet API
-
 ## Available endpoints
 
 * [Company](./docs/company_endpoint.md)
