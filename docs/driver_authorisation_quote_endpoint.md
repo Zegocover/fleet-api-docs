@@ -1,13 +1,17 @@
-## POST /v2/fleet/driver-assignment/quote/
+## Driver Authorisation Request
 
-### Request Body
+### Create Driver Authorisation Request
+
+`POST /v2/fleet/driver-authorisation-request/`
+
+#### Request Body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | fleetDriverId | int | yes |  |
 | fleetVehicleId | int | yes |  |
-| coverStartsAt | iso-8601 date time | no |  |
-| coverEndsAt | iso-8601 date time | no |  |
+| startTime | iso-8601 date time | no |  |
+| endTime | iso-8601 date time | no |  |
 
 
 
@@ -17,30 +21,37 @@
 {
     "fleetDriverId": 3,
     "fleetVehicleId": 2,
-    "coverStartsAt": "2019-08-01T17:00:00",
-    "coverEndsAt": "2019-12-01:21:00:00"
+    "startTime": "2019-08-01T17:00:00",
+    "endTime": "2019-12-01:21:00:00"
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 201
 
 ```
 {
   "id": 5,
-  "pricing": {
-    "excess": 100000, # pence
-    "dailyPremium": 1250 # pence
-    "totalPremium": 250 # pounds
-  },
   "fleetVehicleId": 2,
   "fleetDriverId": 3,
-  "declined": false
+  "status": "approved",
+  "rates": [
+    {
+      "kind": "premium_per_day",
+      "amount": 992,
+      "currency": "GBP"
+    },
+    {
+      "kind": "excess",
+      "amount": 50000,
+      "currency": "GBP"
+    }
+  ],
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 401
 
@@ -57,72 +68,59 @@ HTTP 401
 }
 ```
 
-## GET /v2/fleet/driver-assignment/quote/&lt;assignmentQuoteId&gt;
+### Get Driver Authorisation Request
 
-### Example response
+`GET /v2/fleet/driver-authorisation-request/&lt;authorisationRequestId&gt;`
+
+##### Example response
 
 HTTP 201
 
 ```
 {
   "id": 5,
-  "pricing": {
-    "excess": 100000, # pence
-    "dailyPremium": 1250 # pence
-    "totalPremium": 250 # pounds
-  },
   "fleetVehicleId": 2,
   "fleetDriverId": 3,
-  "declined": false
+  "status": "approved",
+  "rates": [
+    {
+      "kind": "premium_per_day",
+      "amount": 992,
+      "currency": "GBP"
+    },
+    {
+      "kind": "excess",
+      "amount": 50000,
+      "currency": "GBP"
+    }
+  ],
 }
 ```
 
-## GET /v2/fleet/driver-assignment/quote/
+### List Driver Authorisation Requests
 
-### Example response
+`GET /v2/fleet/driver-authorisation-request/`
+
+##### Example response
 
 HTTP 201
 
 ```
 {
-  "quotes": [
+  "requests": [
     {
-    "declined": true,
-    "fleetVehicleId": 2,
-    "fleetDriverId": 3,
-    "id": 1,
-    "pricing": null
+      "status": "declined",
+      "fleetVehicleId": 2,
+      "fleetDriverId": 3,
+      "id": 1,
+      "rates": null
     },
     {
-    "declined": true,
-    "fleetVehicleId": 2,
-    "fleetDriverId": 3,
-    "id": 2,
-    "pricing": null
-    },
-    {
-    "declined": true,
-    "fleetVehicleId": 2,
-    "fleetDriverId": 3,
-    "id": 3,
-    "pricing": null
-    },
-    {
-    "declined": true,
-    "fleetVehicleId": 2,
-    "fleetDriverId": 3,
-    "id": 4,
-    "pricing": null
-    },
-    {
-    "declined": false,
-    "fleetVehicleId": 2,
-    "fleetDriverId": 3,
-    "id": 5,
-    "pricing": {
-        "excess": 100000,
-        "dailyPremium": 3500
-    }
+      "declined": "approved",
+      "fleetVehicleId": 2,
+      "fleetDriverId": 3,
+      "id": 2,
+      "rates": null
     }
   ]
 }

@@ -1,6 +1,11 @@
-## GET /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/&lt;declaredConvictionId&gt;/
+## Driver Declared Convictions
 
-### Example response
+
+### Get Driver Declared Conviction
+
+`GET /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/&lt;declaredConvictionId&gt;/`
+
+##### Example response
 
 HTTP 200
 
@@ -22,7 +27,7 @@ HTTP 200
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 
@@ -39,16 +44,18 @@ HTTP 404
 }
 ```
 
-## POST /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/
+### Create Driver Declared Conviction
 
-### Request Body
+`POST /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/`
+
+#### Request Body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | convictionDate | iso-8601 string | yes |  |
-| convictionType | string | yes | The type of conviction as defined by the ABI code list, see definition list |
+| convictionType | string | yes | See [Conviction Types](./docs/conviction_types.md) |
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -63,7 +70,7 @@ HTTP 201
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 404
 
@@ -80,9 +87,11 @@ HTTP 404
 }
 ```
 
-## DELETE /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/&lt;declaredConvictionId&gt;/
+### Delete Driver Declared Conviction
 
-### Example response
+`DELETE /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/&lt;declaredConvictionId&gt;/`
+
+##### Example response
 
 HTTP 200
 

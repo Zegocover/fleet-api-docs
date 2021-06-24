@@ -1,6 +1,6 @@
 ## POST /v2/fleet/vehicle/
 
-### Request body
+#### Request body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
@@ -9,7 +9,7 @@
 | endsAt | iso-8601 string | Yes |  |
 | externalId | string | No |  |
 
-### Example body
+##### Example body
 
 ```
 { 
@@ -20,7 +20,7 @@
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -38,7 +38,7 @@ HTTP 201
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 

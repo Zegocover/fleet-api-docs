@@ -1,6 +1,6 @@
 ## GET /v2/fleet/documents/vehicle/&lt;fleetVehicleId&gt;/
 
-### Example response
+##### Example response
 
 ```
 headers={

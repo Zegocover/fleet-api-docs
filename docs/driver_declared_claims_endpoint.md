@@ -1,6 +1,9 @@
-## GET /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-claim/&lt;declaredClaimId&gt;
+## Driver Declared Claims
+### Get Driver Declared Claim
 
-### Example response
+`GET /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-claim/&lt;declaredClaimId&gt;`
+
+##### Example response
 
 HTTP 200
 
@@ -28,7 +31,7 @@ HTTP 200
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 401
 
@@ -41,18 +44,20 @@ HTTP 401
 }
 ```
 
-## POST v2/fleet/driver/&lt;fleetDriverId&gt;/declared-claim
+### Create Driver Declared Claim
 
-### Request Body
+`POST v2/fleet/driver/&lt;fleetDriverId&gt;/declared-claim`
+
+#### Request Body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | claimDate | iso-8601 string | yes |  |
-| faultType | enum | yes | One of **Fault Types** defined below |
-| claimType | enum | yes | One of **Claim Types** defined below |
+| faultType | enum | yes | See [Fault types](./docs/fault_types.md) |
+| claimType | enum | yes | See [Claim types](./docs/claim_types.md) |
 | customerAtFault | boolean | yes |  |
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -70,7 +75,7 @@ HTTP 201
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 
@@ -86,10 +91,11 @@ HTTP 404
     }
 }
 ```
+### Delete Driver Declared Claim
 
-## DELETE v2/fleet/driver/&lt;fleetDriverId&gt;/declared-claim/&lt;declaredClaimId&gt;
+`DELETE v2/fleet/driver/&lt;fleetDriverId&gt;/declared-claim/&lt;declaredClaimId&gt;`
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -98,49 +104,3 @@ HTTP 200
     "status": "OK"
 }
 ```
-
-### Claim Type Codes
-
-| Key | Notes |
-| --- | --- |
-| A | Accident |
-| B | Accident Damage |
-| C | Chemical |
-| L | Collision |
-| J | Collision with Pedestrian |
-| F | Fire |
-| D | Flood |
-| G | Hit by Third Party |
-| E | Hit Third Party |
-| K | Loss Of Keys |
-| P | Lost Control |
-| M | Malicious Damage As A Result Of Theft |
-| Y | Malicious Damage Claim |
-| N | Multi-Vehicle Collision |
-| 0 (zero) | Not Available |
-| X | Other |
-| H | Parked |
-| R | Riot |
-| S | Storm |
-| Q | Theft from Vehicle |
-| Z | Theft of Vehicle |
-| U | Unknown |
-| V | Vandalism |
-| W | Windscreen/Glass |
-
-### Fault Type Codes
-
-| Key | Notes |
-| --- | --- |
-| A1|Fault | Fault |
-| A1|Fault Including Hit and Run |  |
-| A2 | Fault and Conviction |
-| A3 | Fault and Personal Injury |
-| A4 | Fault and Personal Injury and Conviction |
-| A5 | Non Fault (Full Recovery of Costs Made) |
-| A6 | Non Fault (Including Personal Injury) |
-| F | Fire |
-| T | Theft |
-| W | Windscreen |
-| YF | Fault |
-| NF | Non Fault |

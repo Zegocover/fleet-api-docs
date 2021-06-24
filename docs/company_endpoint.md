@@ -1,6 +1,9 @@
-## POST /v2/fleet/company/
+## Company
 
-### Request Body
+### Get Company
+
+`POST /v2/fleet/company/`
+#### Request Body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
@@ -20,17 +23,20 @@ HTTP 201
     "message": "Company created!",
     "status": "OK",
     "company": {
-            "id": 48,
-            "name": "Zego",
-            "registrationNumber": "101010101",
+        "id": 48,
+        "name": "Zego",
+        "registrationNumber": "101010101",
         "addressLine1": "Tea Room",
-            "addressLine2": "Shoreditch"
-            "postCode": "E1 123",
+        "addressLine2": "Shoreditch"
+        "postCode": "E1 123",
         "countryCode": "GB",
+    }
 }
 ```
 
-## GET /v2/fleet/company/
+### List Companies
+
+`GET /v2/fleet/company/`
 
 ##### Example response
 
@@ -42,20 +48,20 @@ HTTP 200
     {
         "id": 48,
         "name": "Zego"
-    "registrationNumber": "101010101",
-    "addressLine1": "Tea Room",
+        "registrationNumber": "101010101",
+        "addressLine1": "Tea Room",
         "addressLine2": "Shoreditch"
         "postCode": "E1 123",
-    "countryCode": "GB",
+        "countryCode": "GB",
     },
     {
         "id": 49,
         "name": "Drover"
-    "registrationNumber": "101010102",
-    "addressLine1": "8 Orsman Road",
+        "registrationNumber": "101010102",
+        "addressLine1": "8 Orsman Road",
         "addressLine2": ""
         "postCode": "N1 5QJ",
-    "countryCode": "GB",
+        "countryCode": "GB",
     }
   ]
 }

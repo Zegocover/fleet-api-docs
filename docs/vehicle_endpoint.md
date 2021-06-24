@@ -1,6 +1,6 @@
 ## POST /v2/fleet/vehicle/
 
-### Request body
+#### Request body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@
 | vehicle.type | enum  | Yes | one of: &quot;car&quot;, &quot;scooter&quot;, &quot;van&quot; |
 | vehicle.seats | int  | Yes |  |
 
-### Example body
+##### Example body
 
 ```
 {
@@ -42,7 +42,7 @@
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -66,7 +66,7 @@ HTTP 201
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 
@@ -85,7 +85,7 @@ HTTP 404
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request POST \
@@ -112,7 +112,7 @@ curl --request POST \
 
 ## GET /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -134,7 +134,7 @@ HTTP 200
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 401
 
@@ -151,7 +151,7 @@ HTTP 401
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request GET \
@@ -161,7 +161,7 @@ curl --request GET \
 
 ## PUT /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
 
-### Request body
+#### Request body
 
 | **key** | **type** | required | **notes** |
 | --- | --- | --- | --- |
@@ -179,7 +179,7 @@ curl --request GET \
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -216,7 +216,7 @@ curl --request PUT \
 
 ## DELETE /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -250,7 +250,7 @@ curl --request DELETE \
 
 ## GET /v2/fleet/vehicle/
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -295,7 +295,7 @@ HTTP 200
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 # Example CURL
