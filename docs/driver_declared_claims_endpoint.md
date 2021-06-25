@@ -53,8 +53,8 @@ HTTP 401
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | claimDate | iso-8601 string | yes |  |
-| faultType | enum | yes | See [Fault types](./docs/fault_types.md) |
-| claimType | enum | yes | See [Claim types](./docs/claim_types.md) |
+| faultType | enum | yes | See [Fault types](./fault_types.md) |
+| claimType | enum | yes | See [Claim types](./claim_types.md) |
 | customerAtFault | boolean | yes |  |
 
 ##### Example response

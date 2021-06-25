@@ -23,8 +23,8 @@
 | convictions.convictionDate | iso-8601 string | yes | iso-8601 string |
 | convictions.convictionType | string | yes | The type of conviction as defined by the ABI code list, see definition list |
 | claims.claimDate | iso-8601 string | yes |  |
-| claims.faultType | enum | yes |  See [Fault types](./docs/fault_types.md) |
-| claims.claimType | enum | yes | See [Claim types](./docs/claim_types.md) |
+| claims.faultType | enum | yes |  See [Fault types](./fault_types.md) |
+| claims.claimType | enum | yes | See [Claim types](./claim_types.md) |
 | claims.customerAtFault | boolean | yes |  |
 
 ```

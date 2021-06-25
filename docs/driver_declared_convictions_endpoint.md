@@ -53,7 +53,7 @@ HTTP 404
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | convictionDate | iso-8601 string | yes |  |
-| convictionType | string | yes | See [Conviction Types](./docs/conviction_types.md) |
+| convictionType | string | yes | See [Conviction Types](./conviction_types.md) |
 
 ##### Example response
 

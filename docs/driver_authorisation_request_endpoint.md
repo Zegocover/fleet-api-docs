@@ -4,7 +4,7 @@ The driver authorisation request object is required to be created first before a
 
 ### Create Driver Authorisation Request
 
-In order to create a driver authorisation request you must have created a [driver](./docs/driver_endpoint.md) and a [vehicle](./docs/vehicle_endpoint.md) first and have an active [policy](./docs/policy_endpoint.md).
+In order to create a driver authorisation request you must have created a [driver](./driver_endpoint.md) and a [vehicle](./vehicle_endpoint.md) first and have an active [policy](./policy_endpoint.md).
 
 When creating the authorisation request, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the authorisation. Wether or not an authorisation will have charges depends on the product offering you have agreed with Zego.
 

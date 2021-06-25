@@ -1,6 +1,6 @@
 ## Company
 
-The company object can be associated as the owner of a [Vehicle](./docs/vehicle_endpoint.md). You can retrieve a list of all the companies you created.
+The company object can be associated as the owner of a [Vehicle](./vehicle_endpoint.md). You can retrieve a list of all the companies you created.
 
 ### Create Company
 
