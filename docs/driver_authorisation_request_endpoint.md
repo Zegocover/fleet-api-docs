@@ -24,6 +24,8 @@ It will not be possible to confirm authorisation requests that have reached thei
 | startTime | iso-8601 date time | no |  |
 | endTime | iso-8601 date time | no |  |
 
+**startTime** and **endTime** may be required depending on the policy criteria. For example, we may offer different rates based on the length of the authorisation. If this is the case you will need to provde the **startTime** and **endTime** otherwise the request will be declined.
+
 ##### Example body
 
 ```
