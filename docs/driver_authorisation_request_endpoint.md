@@ -6,6 +6,8 @@ Once a request has been made, you can then confirm it if it has the status of **
 
 ### Create Driver Authorisation Request
 
+In order to create a driver authorisation you must have created a [driver](./docs/driver_endpoint.md) and a [vehicle](./docs/vehicle_endpoint.md).
+
 `POST /v2/fleet/driver-authorisation-request/`
 
 #### Request Body
