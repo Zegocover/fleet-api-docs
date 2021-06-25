@@ -1,6 +1,6 @@
 ## Driver Authorisations
 
-The driver authorisation object represents a period of time where a [driver] is authorised to drive a vehicle. In order to create a driver authorisation you must first create a [driver authorisation request](./driver_authorisation_quote_endpoint.md). Authorisations can only be created from **approved** requests. 
+The driver authorisation object represents a period of time where a [driver](./driver_endpoint.md) is authorised to drive a vehicle. In order to create a driver authorisation you must first create a [driver authorisation request](./driver_authorisation_quote_endpoint.md). Authorisations can only be created from **approved** requests. 
 ### Create Driver Authorisation
 
 `POST /v2/fleet/driver-authorisation/`
@@ -49,7 +49,7 @@ HTTP 201
 
 Retrieves the details of a driver authorisation that has previously been created. Supply the unique driver authorisation ID that was returned from your previous request, and Zego will return the corresponding driver authorisation information. The same information is returned when creating or updating the driver authorisation.
 
-`GET /v2/fleet/driver-authorisation/&lt;id&gt;/`
+`GET /v2/fleet/driver-authorisation/:id/`
 
 ##### Example response
 
@@ -138,7 +138,7 @@ HTTP 200
 
 Updates the endTime of the driver authorisation. The endTime can only be shortened. You should create a new driver authorisation request if you wish to extend an authorisation. The startTime can be when the existing one ends.
 
-`PUT /v2/fleet/driver-authorisation/&lt;id&gt;/`
+`PUT /v2/fleet/driver-authorisation/:id/`
 
 #### Request Body
 
@@ -168,7 +168,7 @@ HTTP 202
 
 ### Cancel Driver Authorisation
 
-`DELETE /v2/fleet/driver-authorisation/&lt;id&gt;/`
+`DELETE /v2/fleet/driver-authorisation/:id/`
 
 ##### Scenario 1
 

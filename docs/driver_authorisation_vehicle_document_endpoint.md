@@ -3,7 +3,7 @@
 
 ### Get Driver Authorisation Vehicle Certificate
 
-`GET /v2/fleet/documents/driver-authorisation/vehicle/&lt;id&gt;/`
+`GET /v2/fleet/documents/driver-authorisation/vehicle/:id/`
 
 ##### Example response
 

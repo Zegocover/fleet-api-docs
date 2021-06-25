@@ -95,7 +95,7 @@ curl --request POST \
 
 ### Get Kick Scooter
 
-`GET /v2/fleet/kickscooter/&lt;kickscooterId&gt;`
+`GET /v2/fleet/kickscooter/:kickscooterId`
 
 ##### Example response
 
@@ -127,7 +127,7 @@ curl --request GET \
 
 ### Search Kick Scooter
 
-`GET /v2/fleet/kickscooter?serialNumber=&lt;kickscooterSerialNumber&gt;`
+`GET /v2/fleet/kickscooter?serialNumber=:kickscooterSerialNumber`
 
 ##### Example response
 
@@ -157,7 +157,7 @@ curl --request GET \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
-## PUT /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## PUT /v2/fleet/vehicle/:fleetVehicleId
 
 #### Request body
 
@@ -207,7 +207,7 @@ curl --request PUT \
 
 ### Remove Kick Scooter
 
-`DELETE /v2/fleet/vehicle/&lt;fleetVehicleId&gt;`
+`DELETE /v2/fleet/vehicle/:fleetVehicleId`
 
 Sets **coverEndsAt** to the current UTC time
 

@@ -110,7 +110,7 @@ curl --request POST \
 }'
 ```
 
-## GET /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## GET /v2/fleet/vehicle/:fleetVehicleId
 
 ##### Example response
 
@@ -159,7 +159,7 @@ curl --request GET \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
-## PUT /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## PUT /v2/fleet/vehicle/:fleetVehicleId
 
 #### Request body
 
@@ -214,7 +214,7 @@ curl --request PUT \
 }'
 ```
 
-## DELETE /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## DELETE /v2/fleet/vehicle/:fleetVehicleId
 
 ##### Example response
 

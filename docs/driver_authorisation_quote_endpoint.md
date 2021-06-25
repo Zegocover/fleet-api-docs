@@ -74,7 +74,7 @@ HTTP 401
 
 ### Get Driver Authorisation Request
 
-`GET /v2/fleet/driver-authorisation-request/&lt;authorisationRequestId&gt;`
+`GET /v2/fleet/driver-authorisation-request/:authorisationRequestId`
 
 ##### Example response
 

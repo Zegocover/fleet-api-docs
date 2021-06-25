@@ -3,7 +3,7 @@
 
 ### Get Driver Declared Conviction
 
-`GET /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/&lt;declaredConvictionId&gt;/`
+`GET /v2/fleet/driver/:fleetDriverId/declared-conviction/:declaredConvictionId/`
 
 ##### Example response
 
@@ -46,7 +46,7 @@ HTTP 404
 
 ### Create Driver Declared Conviction
 
-`POST /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/`
+`POST /v2/fleet/driver/:fleetDriverId/declared-conviction/`
 
 #### Request Body
 
@@ -89,7 +89,7 @@ HTTP 404
 
 ### Delete Driver Declared Conviction
 
-`DELETE /v2/fleet/driver/&lt;fleetDriverId&gt;/declared-conviction/&lt;declaredConvictionId&gt;/`
+`DELETE /v2/fleet/driver/:fleetDriverId/declared-conviction/:declaredConvictionId/`
 
 ##### Example response
 

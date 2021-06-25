@@ -1,4 +1,4 @@
-## GET /v2/fleet/documents/vehicle/&lt;fleetVehicleId&gt;/
+## GET /v2/fleet/documents/vehicle/:fleetVehicleId/
 
 ##### Example response
 

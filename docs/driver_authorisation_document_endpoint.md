@@ -2,7 +2,7 @@
 
 ### Get Driver Authorisation Document
 
-`GET /v2/fleet/documents/driver-authorisation/&lt;id&gt;/`
+`GET /v2/fleet/documents/driver-authorisation/:id/`
 
 ##### Example response
 
