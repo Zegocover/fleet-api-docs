@@ -8,9 +8,9 @@ In order to create a driver authorisation request you must have created a [drive
 
 When creating the authorisation request, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the authorisation. Wether or not an authorisation will have charges depends on the product offering you have agreed with Zego.
 
-Once a request has been made, you can then confirm it if it has the status of **approved**. See [driver authorisation](./driver_authorisation_endpoint.md). You may also decide that you do not wish no confirm it.
+Once a request has been made and it has a status of **approved**, you can confirm it to create an authorisation. See [driver authorisation](./driver_authorisation_endpoint.md). You may also decide that you do not wish no confirm it.
 
-The authorisation request will expire after a certain amount of time and it will no longer be possible to confirm it. You will need to request a new one if this happens.
+It will not be possible to confirm authorisation requests that have reached their expiry time. You will need to request a new one if this happens.
 
 `POST /v2/fleet/driver-authorisation-request/`
 
@@ -131,7 +131,7 @@ HTTP 201
       "declined": "approved",
       "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
       "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
-      "id": 2,
+      "id": "fltdar_btoowm25rzdljdm6ln7pon6yry",
       "rates": null,
       "expireTime": "2019-12-01:21:00:00",
     }
