@@ -6,6 +6,7 @@ We allow checking a drivers information against a [policy](./docs/policy_check_d
 
 ### Driver
 
+
 `GET /v2/fleet/policy/:id/check-driver/:driverId`
 
 ##### Example response
@@ -13,5 +14,14 @@ We allow checking a drivers information against a [policy](./docs/policy_check_d
 HTTP 200
 
 ```
-true
+{
+  "status": "passed"
+}
 ```
+
+###### Status
+|key|Notes|
+|---|---|
+|passed|Driver meets the underwriting criteria for the policy|
+|failed|Driver does not meet the underwriting criteria for the policy|
+|missing_information|We don't know enough about the driver to make the decision|
