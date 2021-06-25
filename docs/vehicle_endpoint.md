@@ -1,4 +1,7 @@
-## POST /v2/fleet/vehicle/
+## Vehicle
+### Create Vehicle
+
+`POST /v2/fleet/vehicle/`
 
 #### Request body
 
@@ -110,7 +113,9 @@ curl --request POST \
 }'
 ```
 
-## GET /v2/fleet/vehicle/:fleetVehicleId
+## Get Vehicle
+
+`GET /v2/fleet/vehicle/:fleetVehicleId`
 
 ##### Example response
 
@@ -159,7 +164,9 @@ curl --request GET \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
-## PUT /v2/fleet/vehicle/:fleetVehicleId
+## Update Vehicle
+
+`PUT /v2/fleet/vehicle/:fleetVehicleId`
 
 #### Request body
 
@@ -214,7 +221,9 @@ curl --request PUT \
 }'
 ```
 
-## DELETE /v2/fleet/vehicle/:fleetVehicleId
+## Remove Vehicle
+
+`DELETE /v2/fleet/vehicle/:fleetVehicleId`
 
 ##### Example response
 
