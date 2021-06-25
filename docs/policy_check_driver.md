@@ -2,7 +2,7 @@
 
 You might want the functionality where you check if a driver meets the criteria of the policy before making an authorisation request. For example, if you want to bail out early of a user onboarding flow and the driver has yet to be assigned to a vehicle.
 
-We allow checking a drivers information against a [policy](./docs/policy_check_driver.md). However this does not guarantee that a driver will be authorised to drive any vehicle on your fleet. You must still always request an authorisation as it will check the combination of both driver and vehicle.
+We allow checking a drivers information against a [policy](./docs/policy_endpoint.md). However this does not guarantee that a driver will be authorised to drive any vehicle on your fleet. You must still always request an authorisation as it will check the combination of both driver and vehicle.
 
 ### Driver
 
