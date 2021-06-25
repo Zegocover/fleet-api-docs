@@ -146,6 +146,8 @@ curl --request POST \
 
 ### Update Driver
 
+Updates the specified driver by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
+
 `PUT /v2/fleet/driver/&lt;fleetDriverId&gt;`
 
 #### Request Body

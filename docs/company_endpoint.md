@@ -1,6 +1,8 @@
 ## Company
 
-### Get Company
+The company object can be associated as the owner of a [Vehicle](./docs/vehicle_endpoint.md). You can retrieve a list of all the companies you created.
+
+### Create Company
 
 `POST /v2/fleet/company/`
 #### Request Body
@@ -35,6 +37,8 @@ HTTP 201
 ```
 
 ### List Companies
+
+Returns a list of the companies you created. The companies are returned sorted by creation date, with the most recent companies appearing first.
 
 `GET /v2/fleet/company/`
 

@@ -1,5 +1,6 @@
 ## Driver Authorisations
 
+The driver authorisation object represents a period of time where a [driver] is authorised to drive a vehicle. In order to create a driver authorisation you must first create a [driver authorisation request](./driver_authorisation_quote_endpoint.md). Authorisations can only be created from **approved** requests. 
 ### Create Driver Authorisation
 
 `POST /v2/fleet/driver-authorisation/`
@@ -9,9 +10,9 @@
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | authorisationRequestId | int | yes |  |
-| startTime | iso-8601 date time | no |  |
-| endTime | iso-8601 date time | no |  |
-| externalId | string | no |  |
+| startTime | iso-8601 date time | no | Only required if the authorisation request has no startTime |
+| endTime | iso-8601 date time | no | Only required if the authorisation request has no endTime |
+| externalId | string | no | Allows you to add your unique identifier for the authorisation |
 
 ##### Example body
 
@@ -45,6 +46,9 @@ HTTP 201
 ```
 
 ### Get Driver Authorisation
+
+Retrieves the details of a driver authorisation that has previously been created. Supply the unique driver authorisation ID that was returned from your previous request, and Zego will return the corresponding driver authorisation information. The same information is returned when creating or updating the driver authorisation.
+
 `GET /v2/fleet/driver-authorisation/&lt;id&gt;/`
 
 ##### Example response
@@ -70,10 +74,14 @@ HTTP 200
 
 ### List Driver Authorisations
 
+Returns a list of driver authorisations you’ve previously created.
+
 `GET /v2/fleet/driver-authorisation/`
 
 
 ### Search Driver Authorisations
+
+Allows you to search driver authorisations you’ve previously created.
 
 `GET /v2/fleet/driver-authorisation/search?from=fromDateTime&amp;to=toDateTime`
 
@@ -127,6 +135,8 @@ HTTP 200
 ```
 
 ### Update Driver Authorisation
+
+Updates the endTime of the driver authorisation. The endTime can only be shortened. You should create a new driver authorisation request if you wish to extend an authorisation. The startTime can be when the existing one ends.
 
 `PUT /v2/fleet/driver-authorisation/&lt;id&gt;/`
 

@@ -1,5 +1,9 @@
 ## Driver Authorisation Estimate
+
+Returns estimate rates based on existing vehicles in your fleet. This can be useful if you don't know information about your driver but want some rough rates for your vehicle.
 ## Create Driver Authorisation Estimate
+
+
 
 `POST /v2/fleet/driver-authorisation/estimate/`
 

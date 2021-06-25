@@ -1,9 +1,13 @@
 ## Available endpoints
 
 * [Company](./docs/company_endpoint.md)
+* [Vehicle](./docs/vehicle_endpoint.md)
 * [Driver](./docs/driver_endpoint.md)
     * [Declared Claims](./docs/driver_declared_claims_endpoint.md)
+        * [Claim Types](./docs/claim_types.md)
+        * [Fault Types](./docs/fault_types.md)
     * [Declared Convictions](./docs/driver_declared_convictions_endpoint.md)
+        * [Conviction Types](./docs/conviction_types.md)
 * [Driver Authorisation Request](./docs/driver_authorisation_endpoint.md)
 * [Driver Authorisation](./docs/driver_authorisation_endpoint.md)
     * [Driver Certificate](./docs/driver_authorisation_driver_certificate_endpoint.md)
@@ -11,5 +15,5 @@
 * [KickScooter](./docs/kickscooter_endpoint.md)
 * [Trip Duration](./docs/trip_duration_endpoint.md)
 * [Motor Trade Cover](./docs/motor_trade_cover_endpoint.md)
-* [Vehicle](./docs/vehicle_endpoint.md)
     * [Certificate](./docs/vehicle_certificate_endpoint.md)
+    

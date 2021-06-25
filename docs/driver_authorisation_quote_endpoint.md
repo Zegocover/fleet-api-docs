@@ -1,5 +1,9 @@
 ## Driver Authorisation Request
 
+The driver authorisation request object is required to be created first before a driver authorisation can be created. When creating the request, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the authorisation.
+
+Once a request has been made, you can then confirm it if it has the status of **approved**. See [driver authorisation](./driver_authorisation_endpoint.md).
+
 ### Create Driver Authorisation Request
 
 `POST /v2/fleet/driver-authorisation-request/`

@@ -1,4 +1,5 @@
 ## Driver Authorisation Document
+
 ### Get Driver Authorisation Document
 
 `GET /v2/fleet/documents/driver-authorisation/&lt;id&gt;/`
