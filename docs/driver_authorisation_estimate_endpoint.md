@@ -11,7 +11,7 @@ Returns estimate rates based on existing vehicles in your fleet. This can be use
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
-| fleetVehicleId | int | yes |  |
+| fleetVehicleId | string | yes |  |
 
 ##### Example body
 

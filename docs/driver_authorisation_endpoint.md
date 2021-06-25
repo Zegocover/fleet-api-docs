@@ -9,7 +9,7 @@ The driver authorisation object represents a period of time where a [driver](./d
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
-| authorisationRequestId | int | yes |  |
+| authorisationRequestId | string | yes |  |
 | startTime | iso-8601 date time | no | Only required if the authorisation request has no startTime |
 | endTime | iso-8601 date time | no | Only required if the authorisation request has no endTime |
 | externalId | string | no | Allows you to add your unique identifier for the authorisation |

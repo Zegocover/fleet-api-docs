@@ -19,8 +19,8 @@ The authorisation request will expire after a certain amount of time and it will
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | policyId | string | yes |  |
-| fleetDriverId | int | yes |  |
-| fleetVehicleId | int | yes |  |
+| fleetDriverId | string | yes |  |
+| fleetVehicleId | string | yes |  |
 | startTime | iso-8601 date time | no |  |
 | endTime | iso-8601 date time | no |  |
 

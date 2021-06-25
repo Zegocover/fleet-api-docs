@@ -50,7 +50,7 @@ HTTP 200
 {
   "companies": [
     {
-        "id": 48,
+        "id": "fltcom_be3nayyhqbgknoou3nl6oe77rq",
         "name": "Zego"
         "registrationNumber": "101010101",
         "addressLine1": "Tea Room",
@@ -59,8 +59,8 @@ HTTP 200
         "countryCode": "GB",
     },
     {
-        "id": 49,
-        "name": "Drover"
+        "id": "fltcom_be3nayyhqbgknoou3nl6oe77rq",
+        "name": "Zego 2"
         "registrationNumber": "101010102",
         "addressLine1": "8 Orsman Road",
         "addressLine2": ""
