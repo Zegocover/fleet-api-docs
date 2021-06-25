@@ -1,4 +1,10 @@
-## POST /v2/fleet/vehicle/
+## Duration
+
+The duration object represents a period of time that a vehicle was in use. This is usually used to work out the flexible premium charges for your fleet.
+
+### Create Duration
+
+`POST /v2/fleet/kickscooter/duration`
 
 #### Request body
 
