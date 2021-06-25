@@ -15,7 +15,7 @@ HTTP 200
             "claimDate": "2019-09-11T00:00:00+00:00",
             "claimType": "L",
             "amount": 200,
-            "id": 1,
+            "id": "fltclm_nij2xowz6nbc5nuju2oajamziq",
             "customerAtFault": false,
             "faultType": "A1|Fault Including Hit and Run"
         },
@@ -23,7 +23,7 @@ HTTP 200
             "claimDate": "2019-10-10T00:00:00+00:00",
             "claimType": "L",
             "amount": 100,
-            "id": 4,
+            "id": "fltclm_nij2xowz6nbc5nuju2oajamziq",
             "customerAtFault": false,
             "faultType": “A1|Fault Including Hit and Run”
         }
@@ -68,7 +68,7 @@ HTTP 201
         "claimDate": "2019-10-10T00:00:00+00:00",
         "claimType": "L",
         "amount": 100,
-        "id": 8,
+        "id": "fltclm_nij2xowz6nbc5nuju2oajamziq",
         "customerAtFault": false,
         "faultType": "A1|Fault"
     }

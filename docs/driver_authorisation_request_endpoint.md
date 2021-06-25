@@ -18,7 +18,7 @@ The authorisation request will expire after a certain amount of time and it will
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
-| policyId | int | yes |  |
+| policyId | string | yes |  |
 | fleetDriverId | int | yes |  |
 | fleetVehicleId | int | yes |  |
 | startTime | iso-8601 date time | no |  |
@@ -29,8 +29,8 @@ The authorisation request will expire after a certain amount of time and it will
 ```
 {
     "policyId": "fltpol_bieoesnrpfftvicp2d7xbiratq",
-    "fleetDriverId": 3,
-    "fleetVehicleId": 2,
+    "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
+    "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
     "startTime": "2019-08-01T17:00:00",
     "endTime": "2019-12-01:21:00:00"
 }
@@ -43,8 +43,8 @@ HTTP 201
 ```
 {
   "id": 5,
-  "fleetVehicleId": 2,
-  "fleetDriverId": 3,
+  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
+  "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
   "status": "approved",
   "rates": [
     {
@@ -90,8 +90,8 @@ HTTP 201
 ```
 {
   "id": 5,
-  "fleetVehicleId": 2,
-  "fleetDriverId": 3,
+  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
+  "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
   "status": "approved",
   "rates": [
     {
@@ -121,16 +121,16 @@ HTTP 201
   "requests": [
     {
       "status": "declined",
-      "fleetVehicleId": 2,
-      "fleetDriverId": 3,
+      "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
+      "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
       "id": 1,
       "rates": null,
       "expireTime": null,
     },
     {
       "declined": "approved",
-      "fleetVehicleId": 2,
-      "fleetDriverId": 3,
+      "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
+      "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
       "id": 2,
       "rates": null,
       "expireTime": "2019-12-01:21:00:00",

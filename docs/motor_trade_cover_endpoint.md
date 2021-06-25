@@ -38,7 +38,7 @@ HTTP 200
   "status": "OK",
   "motorTradeCover": {
     "id": 1,
-    "fleetVehicleId": 2,
+    "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
     "coverEndsAt": "2019-09-10T15:54:00+00:00",
     "coverStartsAt": "2019-09-10T15:54:00+00:00"
   }

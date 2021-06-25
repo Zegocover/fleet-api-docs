@@ -14,12 +14,12 @@ HTTP 200
     "status": "OK",
     "declaredConvictions": [
         {
-            "id": 12,
+            "id": "fltcon_ow3b6pkhtjac7h7qgucggqmbha",
             "convictionDate": "2019-10-10T00:00:00+00:00",
             "convictionType": "N001"
         },
         {
-            "id": 13,
+            "id": "fltcon_ow3b6pkhtjac7h7qgucggqmbha",
             "convictionDate": "2019-10-10T00:00:00+00:00",
             "convictionType": "N001"
         }
@@ -64,7 +64,7 @@ HTTP 201
     "status": "OK",
     "declaredConviction": {
         "convictionDate": "2019-10-10T00:00:00+00:00",
-        "id": 13,
+        "id": "fltcon_ow3b6pkhtjac7h7qgucggqmbha",
         "convictionType": "N001"
     }
 }

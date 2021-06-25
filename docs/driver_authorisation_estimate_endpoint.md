@@ -28,12 +28,19 @@ HTTP 201
 ```
 {
   "id": 5,
-  "pricing": {
-    "excess": 100000,
-    "dailyPremium": 35
-    "totalPremium": 700
-  },
-  "fleetVehicleId": 2,
+  "rates": [
+    {
+      "kind": "premium_per_day",
+      "amount": 992,
+      "currency": "GBP"
+    },
+    {
+      "kind": "excess",
+      "amount": 50000,
+      "currency": "GBP"
+    }
+  ],
+  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
   "declined": false
 }
 ```

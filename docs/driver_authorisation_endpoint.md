@@ -18,7 +18,7 @@ The driver authorisation object represents a period of time where a [driver](./d
 
 ```
 {
-    "authorisationRequestId": 1,
+    "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
     "startTime": "2019-08-01T17:00:00",
     "endTime": "2019-12-01:21:00:00",
     "externalId": "1232",
@@ -34,9 +34,9 @@ HTTP 201
     "status": "OK",
     "driverAuthorisation": {
         "id": 1,
-        "fleetDriverId": 12,
-        "fleetVehicleId: 21,
-        "authorisationRequestId": 1,
+        "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+        "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+        "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
         "startTime": "2019-08-01T17:00:00",
         "endTime": "2019-12-01:21:00:00"
         "externalId": "1232",
@@ -60,9 +60,9 @@ HTTP 200
     "status": "OK",
     "driverAuthorisation": {
         "id": 1,
-        "fleetDriverId": 12,
-        "fleetVehicleId": 21,
-        "authorisationRequestId": 1,
+        "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+        "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+        "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
         "startTime": "2019-08-01T17:00:00",
         "endTime": "2019-12-01:21:00:00"
         "externalId": "1232",
@@ -102,9 +102,9 @@ HTTP 200
     "driverAuthorisations": [
         {
             "id": 1,
-            "fleetDriverId": 12,
-            "fleetVehicleId": 21,
-            "authorisationRequestId": 1,
+            "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+            "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+            "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
             "startTime": "2019-08-01T17:00:00",
             "endTime": "2019-12-01:21:00:00"
             "externalId": "1232",
@@ -112,9 +112,9 @@ HTTP 200
         },
         {
             "id": 1,
-            "fleetDriverId": 12,
-            "fleetVehicleId: 21,
-            "authorisationRequestId": 1,
+            "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+            "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+            "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
             "startTime": "2019-08-01T17:00:00",
             "endTime": "2019-12-01:21:00:00"
             "externalId": "1232",
@@ -122,9 +122,9 @@ HTTP 200
         },
         {
             "id": 1,
-            "fleetDriverId": 12,
-            "fleetVehicleId": 21,
-            "authorisationRequestId": 1,
+            "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+            "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+            "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
             "startTime": "2019-08-01T17:00:00",
             "endTime": "2019-12-01:21:00:00",
             "externalId": "1232",
@@ -155,9 +155,9 @@ HTTP 202
     "status": "OK"
     "driverAuthorisation": {
         "id": 1,
-        "fleetDriverId": 12,
-        "fleetVehicleId: 21,
-        "authorisationRequestId": 1,
+        "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+        "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+        "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
         "startTime": "2019-08-01T17:00:00",
         "endTime": "2019-12-01:21:00:00",
         "externalId": "1232",
@@ -191,9 +191,9 @@ HTTP 202
     "status": "OK"
     "driverAuthorisation": {
         "id": 1,
-        "fleetDriverId": 12,
-        "fleetVehicleId: 21,
-        "authorisationRequestId": 1,
+        "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+        "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+        "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
         "startTime": "2050-08-01T17:00:00",
         "endTime": "2050-08-10:21:00:00"
         "externalId": "1232",
@@ -214,9 +214,9 @@ HTTP 202
     "status": "OK"
     "driverAuthorisation": {
         "id": 1,
-        "fleetDriverId": 12,
-        "fleetVehicleId: 21,
-        "authorisationRequestId": 1,
+        "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+        "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+        "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
         "startTime": "2019-08-01T17:00:00",
         "endTime": "2019-08-10:21:00:00", // Will be set to now
         "externalId": "1232",

@@ -63,7 +63,7 @@ HTTP 201
     "fuelType": "PETROL",
     "model": "Yaris"
   },
-  "id": 11,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "city": "London",
   "ownerCompanyId": 1,
 }
@@ -134,7 +134,7 @@ HTTP 200
     "fuelType": "PETROL",
     "model": "Yaris"
   },
-  "id": 11,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "city": "London"
 }
 ```
@@ -194,7 +194,7 @@ HTTP 200
 {
   "city": "London",
   "coverEndsAt": "2019-10-10T20:00:00+00:00",
-  "id": 12,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "vehicle": {
     "engineSize": 1000,
     "type": "car",
@@ -242,7 +242,7 @@ HTTP 200
     "fuelType": "PETROL"
   },
   "city": "London",
-  "id": 12,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "coverEndsAt": "2019-07-01T13:50:11.635258+00:00",
   "uberType": "uber_x",
   "coverStartsAt": "2019-07-01T13:49:23.546984+00:00"
@@ -269,7 +269,7 @@ HTTP 200
     {
       "coverEndsAt": "2019-07-01T13:50:11.635258+00:00",
       "city": "London",
-      "id": 12,
+      "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
       "vehicle": {
           "engineSize": 1000,
           "type": "car",
@@ -286,7 +286,7 @@ HTTP 200
     {
       "coverEndsAt": null,
       "city": "London",
-      "id": 11,
+      "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
       "vehicle": {
           "engineSize": 1000,
           "type": "car",
