@@ -1,12 +1,16 @@
 ## Driver Authorisation Request
 
-The driver authorisation request object is required to be created first before a driver authorisation can be created. When creating the request, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the authorisation.
-
-Once a request has been made, you can then confirm it if it has the status of **approved**. See [driver authorisation](./driver_authorisation_endpoint.md).
+The driver authorisation request object is required to be created first before a driver authorisation can be created.
 
 ### Create Driver Authorisation Request
 
-In order to create a driver authorisation you must have created a [driver](./docs/driver_endpoint.md) and a [vehicle](./docs/vehicle_endpoint.md).
+In order to create a driver authorisation you must have created a [driver](./docs/driver_endpoint.md) and a [vehicle](./docs/vehicle_endpoint.md) first.
+
+When creating the authorisation request, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the authorisation. Wether or not an authorisation will have charges depends on the product offering you have agreed with Zego.
+
+Once a request has been made, you can then confirm it if it has the status of **approved**. See [driver authorisation](./driver_authorisation_endpoint.md). You may also decide that you do not wish no confirm it.
+
+The authorisation request will expire after a certain amount of time and it will no longer be possible to confirm it. You will need to request a new one if this happens.
 
 `POST /v2/fleet/driver-authorisation-request/`
 
@@ -14,12 +18,11 @@ In order to create a driver authorisation you must have created a [driver](./doc
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
+| policyId | int | yes |  |
 | fleetDriverId | int | yes |  |
 | fleetVehicleId | int | yes |  |
 | startTime | iso-8601 date time | no |  |
 | endTime | iso-8601 date time | no |  |
-
-
 
 ##### Example body
 
@@ -54,6 +57,7 @@ HTTP 201
       "currency": "GBP"
     }
   ],
+  "expireTime": "2022-07-07T12:00:00+00:00",
 }
 ```
 
@@ -119,14 +123,16 @@ HTTP 201
       "fleetVehicleId": 2,
       "fleetDriverId": 3,
       "id": 1,
-      "rates": null
+      "rates": null,
+      "expireTime": null,
     },
     {
       "declined": "approved",
       "fleetVehicleId": 2,
       "fleetDriverId": 3,
       "id": 2,
-      "rates": null
+      "rates": null,
+      "expireTime": "2019-12-01:21:00:00",
     }
   ]
 }
