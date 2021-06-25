@@ -5,7 +5,7 @@ Returns estimate rates based on existing vehicles in your fleet. This can be use
 
 
 
-`POST /v2/fleet/driver-authorisation/estimate/`
+`POST /v2/fleet/driver-authorisation-estimate/`
 
 #### Request Body
 
