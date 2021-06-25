@@ -28,6 +28,7 @@ The authorisation request will expire after a certain amount of time and it will
 
 ```
 {
+    "policyId": "fltpol_bieoesnrpfftvicp2d7xbiratq",
     "fleetDriverId": 3,
     "fleetVehicleId": 2,
     "startTime": "2019-08-01T17:00:00",
@@ -80,7 +81,7 @@ HTTP 401
 
 ### Get Driver Authorisation Request
 
-`GET /v2/fleet/driver-authorisation-request/:authorisationRequestId`
+`GET /v2/fleet/driver-authorisation-request/:id`
 
 ##### Example response
 

@@ -115,7 +115,7 @@ curl --request POST \
 
 ## Get Vehicle
 
-`GET /v2/fleet/vehicle/:fleetVehicleId`
+`GET /v2/fleet/vehicle/:id`
 
 ##### Example response
 
@@ -166,7 +166,7 @@ curl --request GET \
 
 ## Update Vehicle
 
-`PUT /v2/fleet/vehicle/:fleetVehicleId`
+`PUT /v2/fleet/vehicle/:id`
 
 #### Request body
 
