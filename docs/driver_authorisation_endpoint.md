@@ -33,7 +33,7 @@ HTTP 201
 {
     "status": "OK",
     "driverAuthorisation": {
-        "id": 1,
+        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -59,7 +59,7 @@ HTTP 200
 {
     "status": "OK",
     "driverAuthorisation": {
-        "id": 1,
+        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -67,7 +67,7 @@ HTTP 200
         "endTime": "2019-12-01:21:00:00"
         "externalId": "1232",
         "modifiedAt": "2019-07-29T17:01:02"
-        "voidedAt": null
+        "cancelTime": null
     }
 }
 ```
@@ -101,7 +101,7 @@ HTTP 200
     "status": "OK"
     "driverAuthorisations": [
         {
-            "id": 1,
+            "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
             "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
             "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
             "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -111,7 +111,7 @@ HTTP 200
             "modifiedAt": "2019-07-29T17:01:02"
         },
         {
-            "id": 1,
+            "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
             "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
             "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
             "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -121,7 +121,7 @@ HTTP 200
             "modifiedAt: "2019-07-29T17:01:02"
         },
         {
-            "id": 1,
+            "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
             "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
             "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
             "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -154,7 +154,7 @@ HTTP 202
 {
     "status": "OK"
     "driverAuthorisation": {
-        "id": 1,
+        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -174,14 +174,6 @@ HTTP 202
 
 If you perform a DELETE request on the driver assignment resource that has not started yet this will cancel the driver assignment.
 
-##### Scenario 2
-
-If you perform a DELETE request on the driver assignment that is in progress it will set the **endTime** to now.
-
-Performing this action on an assignment may be subject to cancellation charges.
-
-##### Scenario 1 
-
 ##### Example response
 
 HTTP 202
@@ -190,7 +182,7 @@ HTTP 202
 {
     "status": "OK"
     "driverAuthorisation": {
-        "id": 1,
+        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -198,12 +190,15 @@ HTTP 202
         "endTime": "2050-08-10:21:00:00"
         "externalId": "1232",
         "modifiedAt: "2019-07-29T17:01:02",
-        "voidedAt":  "2019-08-10:21:00:00" // Will be set to now
+        "cancelTime":  "2019-08-10:21:00:00" // Will be set to now
     }
 }
 ```
+##### Scenario 2
 
-##### Scenario 2 
+If you perform a DELETE request on the driver assignment that is in progress it will set the **endTime** to now.
+
+Performing this action on an assignment may be subject to cancellation charges.
 
 ##### Example response
 
@@ -213,7 +208,7 @@ HTTP 202
 {
     "status": "OK"
     "driverAuthorisation": {
-        "id": 1,
+        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -221,9 +216,7 @@ HTTP 202
         "endTime": "2019-08-10:21:00:00", // Will be set to now
         "externalId": "1232",
         "modifiedAt: "2019-07-29T17:01:02",
-        "voidedAt":  null
+        "cancelTime":  null
     }
-
-
 }
 ```

@@ -123,7 +123,7 @@ HTTP 201
       "status": "declined",
       "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
       "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
-      "id": 1,
+      "id": "fltdar_btoowm25rzdljdm6ln7pon6yry",
       "rates": null,
       "expireTime": null,
     },

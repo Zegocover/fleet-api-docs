@@ -14,8 +14,6 @@
 * [Driver Authorisation](./docs/driver_authorisation_endpoint.md)
     * [Driver Certificate](./docs/driver_authorisation_driver_certificate_endpoint.md)
     * [Vehicle Certificate](./docs/driver_authorisation_vehicle_certificate_endpoint.md)
+
 * [KickScooter](./docs/kickscooter_endpoint.md)
 * [Trip Duration](./docs/trip_duration_endpoint.md)
-* [Motor Trade Cover](./docs/motor_trade_cover_endpoint.md)
-    * [Certificate](./docs/vehicle_certificate_endpoint.md)
-    
