@@ -9,6 +9,7 @@
     * [Declared Convictions](./docs/driver_declared_convictions_endpoint.md)
         * [Conviction Types](./docs/conviction_types.md)
 * [Policy](./docs/policy_endpoint.md)
+    * [Check Driver](./docs/policy_check_driver.md)
 * [Driver Authorisation Request](./docs/driver_authorisation_request_endpoint.md)
 * [Driver Authorisation](./docs/driver_authorisation_endpoint.md)
     * [Driver Certificate](./docs/driver_authorisation_driver_certificate_endpoint.md)
