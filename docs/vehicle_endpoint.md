@@ -259,7 +259,7 @@ curl --request DELETE \
 
 ## List Vehicles
 
-GET /v2/fleet/vehicle/
+`GET /v2/fleet/vehicle/`
 
 ##### Example response
 
