@@ -309,7 +309,6 @@ HTTP 200
 ##### Example CURL
 
 ```
-# Example CURL
 curl --request GET \
 --url http://localhost:8000/v2/fleet/vehicle/
 --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
