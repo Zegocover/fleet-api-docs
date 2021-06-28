@@ -27,6 +27,8 @@
 | claims.claimType | enum | yes | See [Claim types](./claim_types.md) |
 | claims.customerAtFault | boolean | yes |  |
 
+##### Example request
+
 ```
 {
     "driver": {
@@ -215,7 +217,7 @@ HTTP 201
 ```
 
 
-### List drivers
+### List Drivers
 
 `GET /v2/fleet/driver/`
 
