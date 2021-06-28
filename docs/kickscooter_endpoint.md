@@ -1,6 +1,10 @@
-## POST /v2/fleet/kickscooter
+## Kick Scooter
 
-**Request body**
+### Create Kick Scooter
+
+`POST /v2/fleet/kickscooter`
+
+#### Request body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
@@ -13,7 +17,7 @@
 | kickscooter.year | int | Yes | Accepts values between 1950 and the current year + 1 |
 | kickscooter.valuation | int | Yes |  |
 
-### Example body
+##### Example body
 
 ```
 {
@@ -30,7 +34,7 @@
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -50,7 +54,7 @@ HTTP 201
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 
@@ -69,7 +73,7 @@ HTTP 404
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request POST \
@@ -89,39 +93,11 @@ curl --request POST \
 }'
 ```
 
-## GET /v2/fleet/kickscooter/&lt;kickscooterId&gt;
+### Get Kick Scooter
 
-### Example response
+`GET /v2/fleet/kickscooter/:kickscooterId`
 
-HTTP 200
-
-```
-{
-    "id": 11,
-    "coverStartsAt": "2019-10-10T10:00:00+00:00",
-    "coverEndsAt": "2019-10-10T20:00:00+00:00",
-    "city": "London",
-    "kickscooter": {
-        "serialNumber": "1234ABCD", 
-        "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
-        "valuation": 400
-    },
-}
-```
-
-### Example CURL
-
-```
-curl --request GET \
-  --url http://api.zego.com/v2/fleet/kickscooter/11/ \
-  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
-```
-
-## GET /v2/fleet/kickscooter?serialNumber=&lt;kickscooterSerialNumber&gt;
-
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -141,7 +117,7 @@ HTTP 200
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request GET \
@@ -149,15 +125,47 @@ curl --request GET \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
-## PUT /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+### Search Kick Scooter
 
-### Request body
+`GET /v2/fleet/kickscooter?serialNumber=:kickscooterSerialNumber`
+
+##### Example response
+
+HTTP 200
+
+```
+{
+    "id": 11,
+    "coverStartsAt": "2019-10-10T10:00:00+00:00",
+    "coverEndsAt": "2019-10-10T20:00:00+00:00",
+    "city": "London",
+    "kickscooter": {
+        "serialNumber": "1234ABCD", 
+        "make": "Xiaomi",
+        "model": "M365", 
+        "year": 2018, 
+        "valuation": 400
+    },
+}
+```
+
+##### Example CURL
+
+```
+curl --request GET \
+  --url http://api.zego.com/v2/fleet/kickscooter/11/ \
+  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
+```
+
+## PUT /v2/fleet/vehicle/:fleetVehicleId
+
+#### Request body
 
 | **key** | **type** | required | **notes** |
 | --- | --- | --- | --- |
 | coverEndsAt | iso-8601 | Yes | string |
 
-### Example body
+##### Example body
 
 ```
 {
@@ -165,7 +173,7 @@ curl --request GET \
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -185,7 +193,7 @@ HTTP 200
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request PUT \
@@ -197,11 +205,13 @@ curl --request PUT \
 }'
 ```
 
-## DELETE /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+### Remove Kick Scooter
+
+`DELETE /v2/fleet/vehicle/:fleetVehicleId`
 
 Sets **coverEndsAt** to the current UTC time
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -221,7 +231,7 @@ HTTP 200
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request DELETE \

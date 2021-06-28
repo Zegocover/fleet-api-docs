@@ -1,6 +1,11 @@
-## GET /v2/fleet/documents/driver-assignment/vehicle/&lt;driverAssignmentId&gt;/
+## Driver Authorisation Vehicle Certificate
 
-### Example response
+
+### Get Driver Authorisation Vehicle Certificate
+
+`GET /v2/fleet/documents/driver-authorisation/vehicle/:id/`
+
+##### Example response
 
 HTTP 200
 
@@ -13,7 +18,7 @@ headers={
 
 **This end point returns a PDF Document**
 
-### Example response
+##### Example response
 
 HTTP 400
 

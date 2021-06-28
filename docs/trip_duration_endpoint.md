@@ -1,6 +1,12 @@
-## POST /v2/fleet/vehicle/
+## Duration
 
-### Request body
+The duration object represents a period of time that a vehicle was in use. This is usually used to work out the flexible premium charges for your fleet.
+
+### Create Duration
+
+`POST /v2/fleet/kickscooter/duration`
+
+#### Request body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
@@ -9,7 +15,7 @@
 | endsAt | iso-8601 string | Yes |  |
 | externalId | string | No |  |
 
-### Example body
+##### Example body
 
 ```
 { 
@@ -20,7 +26,7 @@
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -38,7 +44,7 @@ HTTP 201
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 

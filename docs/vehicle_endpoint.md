@@ -1,6 +1,9 @@
-## POST /v2/fleet/vehicle/
+## Vehicle
+### Create Vehicle
 
-### Request body
+`POST /v2/fleet/vehicle/`
+
+#### Request body
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
@@ -8,7 +11,7 @@
 | city | string  | No |  |
 | coverEndsAt | iso-8601 string  | No |  |
 | uberType | enum  | No | one of: “uber_x”, “uber_xl”, “uber_exec”, “uber_lux”  |
-| ownerCompanyId | int  | No |  **Zego ID** of the company that owns the vehicle. |
+| ownerCompanyId | string  | No |  **ID** of the company that owns the vehicle. See [company](./company_endpoint.md) documentation. |
 | vehicle.registrationNumber | string  | Yes |  |
 | vehicle.make | string  | Yes | e.g. Honda |
 | vehicle.model | string  | Yes | e.g Accord |
@@ -19,7 +22,7 @@
 | vehicle.type | enum  | Yes | one of: &quot;car&quot;, &quot;scooter&quot;, &quot;van&quot; |
 | vehicle.seats | int  | Yes |  |
 
-### Example body
+##### Example body
 
 ```
 {
@@ -42,7 +45,7 @@
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 201
 
@@ -60,13 +63,13 @@ HTTP 201
     "fuelType": "PETROL",
     "model": "Yaris"
   },
-  "id": 11,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "city": "London",
   "ownerCompanyId": 1,
 }
 ```
 
-### Example error
+##### Example error
 
 HTTP 404
 
@@ -85,7 +88,7 @@ HTTP 404
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request POST \
@@ -110,9 +113,11 @@ curl --request POST \
 }'
 ```
 
-## GET /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## Get Vehicle
 
-### Example response
+`GET /v2/fleet/vehicle/:id`
+
+##### Example response
 
 HTTP 200
 
@@ -129,12 +134,12 @@ HTTP 200
     "fuelType": "PETROL",
     "model": "Yaris"
   },
-  "id": 11,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "city": "London"
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 401
 
@@ -151,7 +156,7 @@ HTTP 401
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 curl --request GET \
@@ -159,9 +164,11 @@ curl --request GET \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
-## PUT /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## Update Vehicle
 
-### Request body
+`PUT /v2/fleet/vehicle/:id`
+
+#### Request body
 
 | **key** | **type** | required | **notes** |
 | --- | --- | --- | --- |
@@ -179,7 +186,7 @@ curl --request GET \
 }
 ```
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -187,7 +194,7 @@ HTTP 200
 {
   "city": "London",
   "coverEndsAt": "2019-10-10T20:00:00+00:00",
-  "id": 12,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "vehicle": {
     "engineSize": 1000,
     "type": "car",
@@ -214,9 +221,11 @@ curl --request PUT \
 }'
 ```
 
-## DELETE /v2/fleet/vehicle/&lt;fleetVehicleId&gt;
+## Remove Vehicle
 
-### Example response
+`DELETE /v2/fleet/vehicle/:fleetVehicleId`
+
+##### Example response
 
 HTTP 200
 
@@ -233,7 +242,7 @@ HTTP 200
     "fuelType": "PETROL"
   },
   "city": "London",
-  "id": 12,
+  "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "coverEndsAt": "2019-07-01T13:50:11.635258+00:00",
   "uberType": "uber_x",
   "coverStartsAt": "2019-07-01T13:49:23.546984+00:00"
@@ -250,7 +259,7 @@ curl --request DELETE \
 
 ## GET /v2/fleet/vehicle/
 
-### Example response
+##### Example response
 
 HTTP 200
 
@@ -260,7 +269,7 @@ HTTP 200
     {
       "coverEndsAt": "2019-07-01T13:50:11.635258+00:00",
       "city": "London",
-      "id": 12,
+      "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
       "vehicle": {
           "engineSize": 1000,
           "type": "car",
@@ -277,7 +286,7 @@ HTTP 200
     {
       "coverEndsAt": null,
       "city": "London",
-      "id": 11,
+      "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
       "vehicle": {
           "engineSize": 1000,
           "type": "car",
@@ -295,7 +304,7 @@ HTTP 200
 }
 ```
 
-### Example CURL
+##### Example CURL
 
 ```
 # Example CURL
