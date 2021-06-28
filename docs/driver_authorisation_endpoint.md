@@ -33,7 +33,7 @@ HTTP 201
 {
     "status": "OK",
     "driverAuthorisation": {
-        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+        "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -59,7 +59,7 @@ HTTP 200
 {
     "status": "OK",
     "driverAuthorisation": {
-        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+        "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -101,7 +101,7 @@ HTTP 200
     "status": "OK"
     "driverAuthorisations": [
         {
-            "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+            "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
             "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
             "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
             "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -111,7 +111,7 @@ HTTP 200
             "modifiedAt": "2019-07-29T17:01:02"
         },
         {
-            "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+            "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
             "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
             "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
             "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -121,7 +121,7 @@ HTTP 200
             "modifiedAt: "2019-07-29T17:01:02"
         },
         {
-            "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+            "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
             "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
             "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
             "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -154,7 +154,7 @@ HTTP 202
 {
     "status": "OK"
     "driverAuthorisation": {
-        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+        "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -182,7 +182,7 @@ HTTP 202
 {
     "status": "OK"
     "driverAuthorisation": {
-        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+        "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",
@@ -208,7 +208,7 @@ HTTP 202
 {
     "status": "OK"
     "driverAuthorisation": {
-        "id": "fltaut_ese55zccqze6tozzb5hjwtpxie",
+        "id": "fltdau_ese55zccqze6tozzb5hjwtpxie",
         "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
         "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
         "authorisationRequestId": "fltdar_btoowm25rzdljdm6ln7pon6yry",

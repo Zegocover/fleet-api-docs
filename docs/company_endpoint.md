@@ -25,7 +25,7 @@ HTTP 201
     "message": "Company created!",
     "status": "OK",
     "company": {
-        "id": 48,
+        "id": "fltcom_be3nayyhqbgknoou3nl6oe77rq",
         "name": "Zego",
         "registrationNumber": "101010101",
         "addressLine1": "Tea Room",

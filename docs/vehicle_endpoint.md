@@ -257,7 +257,9 @@ curl --request DELETE \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
 ```
 
-## GET /v2/fleet/vehicle/
+## List Vehicles
+
+GET /v2/fleet/vehicle/
 
 ##### Example response
 
