@@ -20,8 +20,9 @@ HTTP 200
 ```
 
 ###### Status
-|key|Notes|
-|---|---|
-|passed|Driver meets the underwriting criteria for the policy|
-|failed|Driver does not meet the underwriting criteria for the policy|
-|missing_information|We don't know enough about the driver to make the decision|
+
+| Key | Notes |
+| --- | --- |
+| passed | Driver meets the underwriting criteria for the policy|
+| failed | Driver does not meet the underwriting criteria for the policy |
+| missing_information | We don't know enough about the driver to make the decision |
