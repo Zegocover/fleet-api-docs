@@ -11,7 +11,7 @@
 | city | string  | No |  |
 | coverEndsAt | iso-8601 string  | No |  |
 | uberType | enum  | No | one of: “uber_x”, “uber_xl”, “uber_exec”, “uber_lux”  |
-| ownerCompanyId | string  | No |  **Zego ID** of the company that owns the vehicle. |
+| ownerCompanyId | string  | No |  **Zego ID** of the company that owns the vehicle. See [company]('./company_endpoint.md) |
 | vehicle.registrationNumber | string  | Yes |  |
 | vehicle.make | string  | Yes | e.g. Honda |
 | vehicle.model | string  | Yes | e.g Accord |
