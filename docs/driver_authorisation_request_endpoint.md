@@ -31,8 +31,8 @@ It will not be possible to confirm authorisation requests that have reached thei
 ```
 {
     "policyId": "fltpol_bieoesnrpfftvicp2d7xbiratq",
-    "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
-    "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
+    "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
+    "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
     "startTime": "2019-08-01T17:00:00",
     "endTime": "2019-12-01:21:00:00"
 }
@@ -45,8 +45,8 @@ HTTP 201
 ```
 {
   "id": "fltdar_btoowm25rzdljdm6ln7pon6yry",
-  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
-  "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
+  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+  "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
   "status": "approved",
   "rates": [
     {
@@ -92,8 +92,8 @@ HTTP 201
 ```
 {
   "id": "fltdar_btoowm25rzdljdm6ln7pon6yry",
-  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
-  "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
+  "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+  "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
   "status": "approved",
   "rates": [
     {
@@ -123,16 +123,16 @@ HTTP 201
   "requests": [
     {
       "status": "declined",
-      "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
-      "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
+      "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+      "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
       "id": "fltdar_btoowm25rzdljdm6ln7pon6yry",
       "rates": null,
       "expireTime": null,
     },
     {
       "declined": "approved",
-      "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm"
-      "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy"
+      "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
+      "fleetDriverId": "fltdrv_kiaqgehibbhktagg75drzcssxy",
       "id": "fltdar_btoowm25rzdljdm6ln7pon6yry",
       "rates": null,
       "expireTime": "2019-12-01:21:00:00",

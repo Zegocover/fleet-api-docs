@@ -1,7 +1,7 @@
 ## Driver Declared Claims
 ### Get Driver Declared Claim
 
-`GET /v2/fleet/driver/:fleetDriverId/declared-claim/:declaredClaimId`
+`GET /v2/fleet/driver/:fleetDriverId/declared-claim/:id`
 
 ##### Example response
 
@@ -93,7 +93,7 @@ HTTP 404
 ```
 ### Delete Driver Declared Claim
 
-`DELETE v2/fleet/driver/:fleetDriverId/declared-claim/:declaredClaimId`
+`DELETE v2/fleet/driver/:fleetDriverId/declared-claim/:id`
 
 ##### Example response
 

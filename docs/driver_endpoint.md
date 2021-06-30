@@ -46,28 +46,27 @@
         "country": "GB",
         "licenceValidFrom": "1990-10-09",
         "licenceNumber": "adriverslicence",
-        "licenceDuration": 8,
         "points": 2
     },
     "claims": [
       {
           "claimDate": "2017-02-25 00:00:00+01:00", 
-          "customerAtFault": False,
+          "customerAtFault": false,
           "claimType": "A",
           "faultType": "A1|Fault Including Hit and Run"
        },
        {
           "claimDate": "2017-02-26 00:00:00+01:00", 
-          "customerAtFault": True,
+          "customerAtFault": true,
           "claimType": "L",
-          "faultType": "Collision"
+          "faultType": "A2"
        }
     ],
     "convictions": [
       {
           "convictionDate": "2017-02-25 00:00:00+01:00", 
           "convictionType": "CU40"
-      },
+      }
     ]
 }
 ```

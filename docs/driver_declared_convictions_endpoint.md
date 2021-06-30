@@ -3,7 +3,7 @@
 
 ### Get Driver Declared Conviction
 
-`GET /v2/fleet/driver/:fleetDriverId/declared-conviction/:declaredConvictionId/`
+`GET /v2/fleet/driver/:fleetDriverId/declared-conviction/:id/`
 
 ##### Example response
 
@@ -55,6 +55,16 @@ HTTP 404
 | convictionDate | iso-8601 string | yes |  |
 | convictionType | string | yes | See [Conviction Types](./conviction_types.md) |
 
+
+##### Example body
+
+```
+{
+    "convictionDate": "2017-02-25T00:00:00",
+    "convictionType": "CU40"
+}
+```
+
 ##### Example response
 
 HTTP 201
@@ -89,7 +99,7 @@ HTTP 404
 
 ### Delete Driver Declared Conviction
 
-`DELETE /v2/fleet/driver/:fleetDriverId/declared-conviction/:declaredConvictionId/`
+`DELETE /v2/fleet/driver/:fleetDriverId/declared-conviction/:id/`
 
 ##### Example response
 
