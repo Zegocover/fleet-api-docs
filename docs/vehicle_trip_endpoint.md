@@ -32,11 +32,15 @@ HTTP 201
 
 ```
 {
-  "distanceUnits": "mi",
-  "distance": 1000,
-  "endTime": "2021-07-25T10:00:00+00:00",
-  "vehicleRegistrationNumber": "CBA 666",
-  "startTime": "2021-07-24T10:00:00+00:00"
+  "message": "Trip created!",
+  "status": "OK",
+  "trip": {
+    "distance": 1000,
+    "vehicleRegistrationNumber": "CBA 666",
+    "distanceUnits": "mi",
+    "startTime": "2021-07-29T10:00:00+00:00",
+    "endTime": "2021-07-30T10:00:00+00:00"
+  }
 }
 ```
 
