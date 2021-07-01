@@ -26,6 +26,7 @@
 **Required**
 
 | Key | Type | Required | Notes |
+| --- | --- | --- | --- |
 | licenceNumber | string | yes |  |
 | licenceValidFrom | iso-8601 date string | yes |  |
 | country | ISO 3166-1 alpha-2 string | yes | country of issue |
@@ -35,12 +36,14 @@
 ##### Conviction
 
 | Key | Type | Required | Notes |
+| --- | --- | --- | --- |
 | convictionDate | iso-8601 string | yes | iso-8601 string |
 | convictionType | string | yes | The type of conviction as defined by the ABI code list, see definition list |
 
 ##### Claim
 
 | Key | Type | Required | Notes |
+| --- | --- | --- | --- |
 | claimDate | iso-8601 string | yes |  |
 | faultType | enum | yes |  See [Fault types](./fault_types.md) |
 | claimType | enum | yes | See [Claim types](./claim_types.md) |
@@ -49,6 +52,7 @@
 ##### Private Hire Licence
 
 | Key | Type | Required | Notes |
+| --- | --- | --- | --- |
 | number | string | yes |  |
 | expireTime | iso-8601 date string | yes |  |
 | firstIssueTime | iso-8601 date string | yes | The date in which the person was first ever issued a PCO licence |
