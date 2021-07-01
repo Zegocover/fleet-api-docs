@@ -41,10 +41,10 @@
 ##### Claim
 
 | Key | Type | Required | Notes |
-| claims.claimDate | iso-8601 string | yes |  |
-| claims.faultType | enum | yes |  See [Fault types](./fault_types.md) |
-| claims.claimType | enum | yes | See [Claim types](./claim_types.md) |
-| claims.customerAtFault | boolean | yes |  |
+| claimDate | iso-8601 string | yes |  |
+| faultType | enum | yes |  See [Fault types](./fault_types.md) |
+| claimType | enum | yes | See [Claim types](./claim_types.md) |
+| customerAtFault | boolean | yes |  |
 
 ##### Private Hire Licence
 
