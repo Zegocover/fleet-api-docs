@@ -5,6 +5,10 @@
 `POST /v2/fleet/driver/`
 #### Request Body
 
+##### Driver
+
+**Required**
+
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | email | string | yes |  |
@@ -16,16 +20,39 @@
 | postCode | string | yes |  |
 | country | ISO 3166-1 alpha-2 string | yes |  |
 | agreedFairObtainingNoticeAt | iso-8601 string | no | The datetime the driver agreed to let us access conviction data from third parties |
-| licence.licenceNumber | string | yes |  |
-| licence.licenceValidFrom | iso-8601 date string | yes |  |
-| licence.country | ISO 3166-1 alpha-2 string | yes | country of issue |
-| licence.points | int | yes | current number of endorsement points on the licence |
-| convictions.convictionDate | iso-8601 string | yes | iso-8601 string |
-| convictions.convictionType | string | yes | The type of conviction as defined by the ABI code list, see definition list |
+
+##### Licence
+
+**Required**
+
+| Key | Type | Required | Notes |
+| licenceNumber | string | yes |  |
+| licenceValidFrom | iso-8601 date string | yes |  |
+| country | ISO 3166-1 alpha-2 string | yes | country of issue |
+| points | int | yes | current number of endorsement points on the licence |
+
+
+##### Conviction
+
+| Key | Type | Required | Notes |
+| convictionDate | iso-8601 string | yes | iso-8601 string |
+| convictionType | string | yes | The type of conviction as defined by the ABI code list, see definition list |
+
+##### Claim
+
+| Key | Type | Required | Notes |
 | claims.claimDate | iso-8601 string | yes |  |
 | claims.faultType | enum | yes |  See [Fault types](./fault_types.md) |
 | claims.claimType | enum | yes | See [Claim types](./claim_types.md) |
 | claims.customerAtFault | boolean | yes |  |
+
+##### Private Hire Licence
+
+| Key | Type | Required | Notes |
+| number | string | yes |  |
+| expireTime | iso-8601 date string | yes |  |
+| firstIssueTime | iso-8601 date string | yes | The date in which the person was first ever issued a PCO licence |
+| issuingDistrict | string | yes | See [Private Hire Issuing Districts](./private_hire_issuing_districts.md) |
 
 ##### Example request
 
@@ -47,6 +74,12 @@
         "licenceValidFrom": "1990-10-09",
         "licenceNumber": "adriverslicence",
         "points": 2
+    },
+    "privateHireLicence": {
+      "number": "P36696",
+      "expireTime": "2022-10-10",
+      "issuingDistrict": "london_(pco)",
+      "firstIssueTime": "2016-10-10"
     },
     "claims": [
       {
