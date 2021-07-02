@@ -88,31 +88,6 @@ HTTP 404
 }
 ```
 
-##### Example CURL
-
-```
-curl --request POST \
-  --url http://localhost:8000/v2/fleet/vehicle/ \
-  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
-  --header 'content-type: application/json' \
-  --data '{
-        "vehicle": {
-        "registrationNumber": "AAA0SFX",
-        "make": "Toyota",
-        "model": "Yaris",
-        "year": 1970,
-        "engineSize": 1000,
-        "valuation": 20000,
-        "fuelType": "PETROL",
-        "type": "car",
-        "seats": 9
-    },
-    "coverStartsAt": "2019-10-10T10:00:00+00:00",
-    "city": "London",
-    "uberType": "uber_x",
-}'
-```
-
 ## Get Vehicle
 
 `GET /v2/fleet/vehicle/:id`
@@ -154,14 +129,6 @@ HTTP 401
     ]
   }
 }
-```
-
-##### Example CURL
-
-```
-curl --request GET \
-  --url http://localhost:8000/v2/fleet/vehicle/11/ \
-  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
 ## Update Vehicle
@@ -209,18 +176,6 @@ HTTP 200
 }
 ```
 
-##### Example CURL
-
-```
-curl --request PUT \
-  --url http://localhost:8000/v2/fleet/vehicle/12/ \
-  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
-  --header 'content-type: application/json' \
-  --data '{
-    "coverEndsAt": "2019-10-10T20:00:00+00:00"
-}'
-```
-
 ## Remove Vehicle
 
 `DELETE /v2/fleet/vehicle/:fleetVehicleId`
@@ -247,14 +202,6 @@ HTTP 200
   "uberType": "uber_x",
   "coverStartsAt": "2019-07-01T13:49:23.546984+00:00"
 }
-```
-
-##### Example CURL
-
-```
-curl --request DELETE \
-  --url http://localhost:8000/v2/fleet/vehicle/12/ \
-  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
 ```
 
 ## List Vehicles
@@ -304,12 +251,4 @@ HTTP 200
       }
   ]
 }
-```
-
-##### Example CURL
-
-```
-curl --request GET \
---url http://localhost:8000/v2/fleet/vehicle/
---header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
 ```

@@ -143,46 +143,6 @@ HTTP 401
 }
 ```
 
-##### Example CURL
-
-```
-curl --request POST \
-  --url http://localhost:8000/v2/fleet/driver/ \
-  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
-  --header 'content-type: application/json' \
-  --data '{
-   "driver":{
-    "email":"raekwon@wutangforever.wu",
-    "address":"25 Luke Street",
-    "city":"London",
-    "dob":"14/4/2000",
-    "givenNames":"Reakwon The",
-    "lastName":"Chef",
-    "phoneNumber":"+4412314323423",
-    "postCode":"EC2A 4DS",
-    "country":"GB"
-   },
-   "licence":{
-    "country":"GB",
-    "licenceNumber":"adriverslicence",
-    "licenceDuration":4,
-    "points":2
-   },
-   "convictions":[
-    {
-        "convictionDate":"2017-02-25 00:00:00+01:00",
-        "convictionType":"CU40"
-    }
-   ],
-   "claims":[
-    {
-        "claimDate":"2017-02-25 00:00:00+01:00",
-        "customerAtFault":false
-    }
-   ]
-}'
-```
-
 ### Update Driver
 
 Updates the specified driver by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
