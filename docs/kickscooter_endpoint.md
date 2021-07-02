@@ -21,7 +21,7 @@
 
 ```
 {
-    "kickscooter": {
+    "kickScooter": {
         "serialNumber": "1234ABCD", 
         "make": "Xiaomi",
         "model": "M365", 
@@ -44,7 +44,7 @@ HTTP 201
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
-    "kickscooter": {
+    "kickScooter": {
         "serialNumber": "1234ABCD", 
         "make": "Xiaomi",
         "model": "M365", 
@@ -83,7 +83,7 @@ curl --request POST \
   --data '{
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "city": "London",
-    "kickscooter": {
+    "kickScooter": {
         "serialNumber": "1234ABCD", 
         "make": "Xiaomi",
         "model": "M365", 
@@ -107,7 +107,7 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
-    "kickscooter": {
+    "kickScooter": {
         "serialNumber": "1234ABCD", 
         "make": "Xiaomi",
         "model": "M365", 
@@ -139,7 +139,7 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
-    "kickscooter": {
+    "kickScooter": {
         "serialNumber": "1234ABCD", 
         "make": "Xiaomi",
         "model": "M365", 
@@ -183,7 +183,7 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2020-1-10T20:00:00+00:00",
     "city": "London",
-      "kickscooter": {
+      "kickScooter": {
           "serialNumber": "1234ABCD", 
           "make": "Xiaomi",
           "model": "M365", 
@@ -221,7 +221,7 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2020-1-10T20:00:00+00:00",
     "city": "London",
-      "kickscooter": {
+      "kickScooter": {
           "serialNumber": "1234ABCD", 
           "make": "Xiaomi",
           "model": "M365", 
