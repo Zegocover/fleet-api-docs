@@ -2,7 +2,7 @@
 
 ### Create Vehicle
 
-Create a vehicle and add it to your fleet. The **coverStartsAt** field represents when you would like the vehicle to added to your policy.
+Create a vehicle and add it to your fleet. The **coverStartsAt** field represents when you would like the vehicle added to your policy and for the cover to start.
 
 `POST /v2/fleet/vehicle/`
 
