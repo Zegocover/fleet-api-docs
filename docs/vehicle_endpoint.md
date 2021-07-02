@@ -1,5 +1,8 @@
 ## Vehicle
+
 ### Create Vehicle
+
+Create a vehicle and add it to your fleet. The **coverStartsAt** field represents when you would like the vehicle to added to your policy.
 
 `POST /v2/fleet/vehicle/`
 
@@ -41,7 +44,7 @@
     "city": "London",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "uberType": "uber_x",
-    "ownerCompanyId": 1
+    "ownerCompanyId": "fltcom_be3nayyhqbgknoou3nl6oe77rq"
 }
 ```
 
@@ -65,7 +68,7 @@ HTTP 201
   },
   "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "city": "London",
-  "ownerCompanyId": 1,
+  "ownerCompanyId": "fltcom_be3nayyhqbgknoou3nl6oe77rq",
 }
 ```
 
@@ -177,6 +180,8 @@ HTTP 200
 ```
 
 ## Remove Vehicle
+
+This will remove the vehicle from your fleet and it will no longer be insured. If you remove a vehicle and want to re activate the insurance again, you will need to recreate the vehicle.
 
 `DELETE /v2/fleet/vehicle/:fleetVehicleId`
 
