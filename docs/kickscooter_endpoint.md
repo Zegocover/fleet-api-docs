@@ -127,7 +127,7 @@ curl --request GET \
 
 ### Search Kick Scooter
 
-`GET /v2/fleet/kickscooter?serialNumber=:kickscooterSerialNumber`
+`GET /v2/fleet/kickscooter/search?serialNumber=:kickscooterSerialNumber`
 
 ##### Example response
 
