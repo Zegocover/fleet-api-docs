@@ -28,7 +28,7 @@
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
-| licenceTypeAbi | string | yes | See [ABI licence types](./licence_types.md) |
+| licenceTypeAbi | enum | yes | See [ABI licence types](./licence_types.md) |
 | licenceNumber | string | yes |  |
 | licenceValidFrom | iso-8601 date string | yes |  |
 | country | ISO 3166-1 alpha-2 string | yes | country of issue |
@@ -40,7 +40,7 @@
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
 | convictionDate | iso-8601 string | yes | iso-8601 string |
-| convictionType | string | yes | See [Conviction types](./conviction_types.md) |
+| convictionType | enum | yes | See [Conviction types](./conviction_types.md) |
 
 ##### Claim
 
