@@ -76,6 +76,7 @@
      "country": "GB"
     },
     "licence": {
+        "licenceTypeAbi": "F",
         "country": "GB",
         "licenceValidFrom": "1990-10-09",
         "licenceNumber": "adriverslicence",
@@ -183,6 +184,7 @@ Updates the specified driver by setting the values of the parameters passed. Any
      "country": "GB"
     },
     "licence": {
+        "licenceTypeAbi": "F",
         "country": "GB",
         "licenceValidFrom": "1990-10-09",
         "licenceNumber": "adriverslicence",
@@ -280,22 +282,60 @@ HTTP 200
 ```
 {
   "status": "OK",
-  "licence": {
-    "licenceNumber": "adriverslicence"
+  "privateHireLicence": {
+    "number": "P36696",
+    "firstIssueTime": "2016-10-10",
+    "issuingDistrict": "aberdeen"
   },
-  "modifiedAt": "2019-07-08T16:32:58.138728+00:00",
-  "id": "fltdrv_kiaqgehibbhktagg75drzcssxy"
   "driver": {
-    "city": "London",
-    "country": "GB",
+    "lastName": "Chef",
+    "hasCriminalConvictions": null,
     "address_line_2": "",
     "email": "raekwon@wutangforever.wu",
-    "lastName": "Chef",
-    "address": "25 Luke Street",
-    "postCode": "EC2A 4DS",
     "givenNames": "Reakwon The",
+    "city": "London",
+    "country": "GB",
+    "postCode": "EC2A 4DS",
+    "address": "25 Luke Street",
     "phoneNumber": "+4412314323423",
     "dob": "1982-04-01"
-  }
+  },
+  "id": "fltdrv_4wtbsqohsvebheaitv2pty7uoq",
+  "licence": {
+    "country": "GB",
+    "licenceValidFrom": "1990-10-09",
+    "licence_duration": 30,
+    "points": 2,
+    "licenceNumber": "adriverslicence",
+    "licenceDurationVerified": true,
+    "licenceTypeAbi": "F"
+  },
+  "convictions": [
+    {
+      "convictionDate": "2017-02-25T00:00:00",
+      "convictionType": "CU40"
+    }
+  ],
+  "modifiedAt": "2021-07-01T18:46:10.474011+00:00",
+  "claims": [
+    {
+      "origin": "api",
+      "id": "fltclm_lh5hyf5wivfx5hpud4avzlqyii",
+      "faultType": "A1|Fault Including Hit and Run",
+      "claimType": "A",
+      "amount": null,
+      "claimDate": "2017-02-25T00:00:00",
+      "customerAtFault": true
+    },
+    {
+      "origin": "api",
+      "id": "fltclm_ebbb43fjgfalhhoo22rlrnrwiq",
+      "faultType": "A2",
+      "claimType": "L",
+      "amount": null,
+      "claimDate": "2017-02-26T00:00:00",
+      "customerAtFault": true
+    }
+  ]
 }
 ```
