@@ -157,7 +157,9 @@ curl --request GET \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
-## PUT /v2/fleet/vehicle/:fleetVehicleId
+### Update Kick Scooter
+
+`PUT /v2/fleet/kickscooter/:id`
 
 #### Request body
 
@@ -197,7 +199,7 @@ HTTP 200
 
 ```
 curl --request PUT \
-  --url http://api.zego.com/v2/fleet/vehicle/12/ \
+  --url http://api.zego.com/v2/fleet/kickscooter/12/ \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
   --header 'content-type: application/json' \
   --data '{
@@ -207,7 +209,7 @@ curl --request PUT \
 
 ### Remove Kick Scooter
 
-`DELETE /v2/fleet/vehicle/:fleetVehicleId`
+`DELETE /v2/fleet/kickscooter/:id`
 
 Sets **coverEndsAt** to the current UTC time
 
@@ -235,6 +237,6 @@ HTTP 200
 
 ```
 curl --request DELETE \
-  --url http://api.zego.com/v2/fleet/vehicle/12/ \
+  --url http://api.zego.com/v2/fleet/kickscooter/12/ \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
 ```
