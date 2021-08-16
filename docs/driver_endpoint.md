@@ -19,8 +19,8 @@
 | city | string | yes |  |
 | postCode | string | yes |  |
 | country | ISO 3166-1 alpha-2 string | yes |  |
-| agreedFairObtainingNoticeAt | iso-8601 string | no | The datetime the driver agreed to let us access conviction data from third parties |
-| hasCriminalConvictions | booleana | no | Does the driver have any unspent criminal convictions. This is needed in order for Zego to run conviction checks. Permission should be requested from the driver. |
+| agreedFairObtainingNoticeAt | iso-8601 string | no | The datetime the driver agreed to let us access conviction data from third parties. This is required if you want Zego to check the users convictions. |
+| hasCriminalConvictions | boolean | no | Does the driver have any unspent criminal convictions. |
 | claims | list | no | A list of claims. See the Claim definition below. Send an empty list if the driver has declared they don't have any claims. |
 | convictions | list | no | A list of convictions. See the Conviction definition below. Send an empty list if the driver has declared they don't have any convictions. |
 
