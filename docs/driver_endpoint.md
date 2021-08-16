@@ -21,6 +21,8 @@
 | country | ISO 3166-1 alpha-2 string | yes |  |
 | agreedFairObtainingNoticeAt | iso-8601 string | no | The datetime the driver agreed to let us access conviction data from third parties |
 | hasCriminalConvictions | booleana | no | Does the driver have any unspent criminal convictions |
+| claims | list | no | A list of claims. See the Claim definition below. Send an empty list if the driver has declared they don't have any claims. |
+| convictions | list | no | A list of convictions. See the Conviction definition below. Send an empty list if the driver has declared they don't have any convictions. |
 
 ##### Licence
 
