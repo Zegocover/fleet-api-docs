@@ -1,8 +1,8 @@
-## Driver Assignment Request
+## Driver Assignment Quote
 
-The driver assignment request object is required to be created first before a driver assignment can be created.
+The driver assignment quote object is required to be created first before a driver assignment can be created.
 
-### Create Driver Assignment Request
+### Create Driver Assignment Quote
 
 In order to create a driver assignment quote you must have created a [driver](./driver_endpoint.md) and a [vehicle](./vehicle_endpoint.md) first and have an active [policy](./policy_endpoint.md).
 
@@ -10,7 +10,7 @@ When creating the assignment quote, Zego checks that the driver and vehicle comb
 
 Once a quote has been made and it has a status of **approved**, you can confirm it to create an assignment. See [driver assignment](./driver_assignment_endpoint.md). You may also decide that you do not wish no confirm it.
 
-It will not be possible to confirm assignment requests that have reached their expiry time. You will need to request a new one if this happens.
+It will not be possible to confirm assignment quotes that have reached their expiry time. You will need to request a new one if this happens.
 
 `POST /v2/fleet/driver-assignment-quote/`
 

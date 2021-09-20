@@ -11,7 +11,7 @@
     * [Licence Types](./docs/licence_types.md)
 * [Policy](./docs/policy_endpoint.md)
     * [Check Driver](./docs/policy_check_driver.md)
-* [Driver Assignment Request](./docs/driver_assignment_quote_endpoint.md)
+* [Driver Assignment Quote](./docs/driver_assignment_quote_endpoint.md)
 * [Driver Assignment](./docs/driver_assignment_endpoint.md)
     * [Driver Certificate](./docs/driver_assignment_document_endpoint.md)
     * [Vehicle Certificate](./docs/driver_assignment_vehicle_document_endpoint.md)
