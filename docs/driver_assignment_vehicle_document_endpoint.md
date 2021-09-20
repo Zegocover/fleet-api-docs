@@ -1,8 +1,9 @@
-## Driver Authorisation Document
+## Driver Assignment Vehicle Certificate
 
-### Get Driver Authorisation Document
 
-`GET /v2/fleet/documents/driver-authorisation/:id/`
+### Get Driver Assignment Vehicle Certificate
+
+`GET /v2/fleet/documents/driver-assignment/vehicle/:id/`
 
 ##### Example response
 
@@ -27,7 +28,7 @@ HTTP 400
     "error": "INVALID_DATA",
     "message": "Document generation failed",
     "detail": {
-        "driver authorisation document": "Fleet vehicle membership dates do not overlap with policy dates"
+        "fleet driver assignment document": "Fleet vehicle membership dates do not overlap with policy dates"
     },
 }
 ```
