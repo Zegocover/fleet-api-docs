@@ -1,18 +1,18 @@
-## Driver Authorisation Request
+## Driver Assignment Request
 
-The driver authorisation request object is required to be created first before a driver authorisation can be created.
+The driver assignment request object is required to be created first before a driver assignment can be created.
 
-### Create Driver Authorisation Request
+### Create Driver Assignment Request
 
-In order to create a driver authorisation request you must have created a [driver](./driver_endpoint.md) and a [vehicle](./vehicle_endpoint.md) first and have an active [policy](./policy_endpoint.md).
+In order to create a driver assignment quote you must have created a [driver](./driver_endpoint.md) and a [vehicle](./vehicle_endpoint.md) first and have an active [policy](./policy_endpoint.md).
 
-When creating the authorisation request, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the authorisation. Wether or not an authorisation will have charges depends on the product offering you have agreed with Zego.
+When creating the assignment quote, Zego checks that the driver and vehicle combination meet the underwriting criteria defined on the policy. It also calculates any charges that might occur from the creation of the assignment. Wether or not an assignment will have charges depends on the product offering you have agreed with Zego.
 
-Once a request has been made and it has a status of **approved**, you can confirm it to create an authorisation. See [driver authorisation](./driver_authorisation_endpoint.md). You may also decide that you do not wish no confirm it.
+Once a quote has been made and it has a status of **approved**, you can confirm it to create an assignment. See [driver assignment](./driver_assignment_endpoint.md). You may also decide that you do not wish no confirm it.
 
-It will not be possible to confirm authorisation requests that have reached their expiry time. You will need to request a new one if this happens.
+It will not be possible to confirm assignment requests that have reached their expiry time. You will need to request a new one if this happens.
 
-`POST /v2/fleet/driver-authorisation-request/`
+`POST /v2/fleet/driver-assignment-quote/`
 
 #### Request Body
 
@@ -24,7 +24,7 @@ It will not be possible to confirm authorisation requests that have reached thei
 | startTime | iso-8601 date time | no |  |
 | endTime | iso-8601 date time | no |  |
 
-**startTime** and **endTime** may be required depending on the policy criteria. For example, we may offer different rates based on the length of the authorisation. If this is the case you will need to provde the **startTime** and **endTime** otherwise the request will be declined.
+**startTime** and **endTime** may be required depending on the policy criteria. For example, we may offer different rates based on the length of the assignment. If this is the case you will need to provde the **startTime** and **endTime** otherwise the quote will be declined.
 
 ##### Example body
 
@@ -81,9 +81,9 @@ HTTP 401
 }
 ```
 
-### Get Driver Authorisation Request
+### Get Driver Assignment Quote
 
-`GET /v2/fleet/driver-authorisation-request/:id`
+`GET /v2/fleet/driver-assignment-quote/:id`
 
 ##### Example response
 
@@ -110,9 +110,9 @@ HTTP 201
 }
 ```
 
-### List Driver Authorisation Requests
+### List Driver Assignment Requests
 
-`GET /v2/fleet/driver-authorisation-request/`
+`GET /v2/fleet/driver-assignment-quote/`
 
 ##### Example response
 
