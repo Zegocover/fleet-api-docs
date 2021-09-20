@@ -2,7 +2,7 @@
 
 The policy object represents a multi-vehicle insurance policy. For now, these can't be created via the API. Zego will set up your policies on your behalf.
 
-The policy ID will be needed when creating [driver assignment requests](./driver_assignment_quote_endpoint.md).
+The policy ID will be needed when creating [driver assignment quotes](./driver_assignment_quote_endpoint.md).
 
 ### Get Policy
 

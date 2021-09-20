@@ -120,7 +120,7 @@ HTTP 201
 
 ```
 {
-  "requests": [
+  "quotes": [
     {
       "status": "declined",
       "fleetVehicleId": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
