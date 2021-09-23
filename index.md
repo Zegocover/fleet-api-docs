@@ -15,6 +15,7 @@
 * [Driver Assignment](./docs/driver_assignment_endpoint.md)
     * [Driver Certificate](./docs/driver_assignment_document_endpoint.md)
     * [Vehicle Certificate](./docs/driver_assignment_vehicle_document_endpoint.md)
+* [Driver Authorisations](./docs/driver_authorisation_endpoint.md)
 * [Company](./docs/company_endpoint.md)
 * [KickScooter](./docs/kickscooter_endpoint.md)
 * [Trip](./docs/vehicle_trip_endpoint.md)
