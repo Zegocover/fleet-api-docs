@@ -12,18 +12,18 @@ The driver authorisation object represents a period of time where an approved [d
 | policyId | string | yes |  |
 | fleetVehicleId | string | yes |  |
 | fleetDriverId | string | yes |  |
-| startTime | iso-8601 date time | no | Must be between the cover period for the vehicle. |
-| endTime | iso-8601 date time | no | Must be between the cover period for the vehicle. |
+| startTime | iso-8601 date time | yes | Must be between the cover period for the vehicle. |
+| endTime | iso-8601 date time | yes | Must be between the cover period for the vehicle. |
 
 ##### Example body
 
 ```
 {
-	"policyId": "fltpol_yxsmj3dadfh7zaj5lvr3hsqeue",
-	"fleetVehicleId": "fltveh_vphjyzcl6bhyvku5l6oap2iiqq",
-	"fleetDriverId": "fltdrv_bezvvs2fcrhalivycd77cwwy7a",	
-	"startTime": "2021-01-10T00:00:00Z",
-	"endTime": "2021-02-10T00:00:00Z"
+  "policyId": "fltpol_yxsmj3dadfh7zaj5lvr3hsqeue",
+  "fleetVehicleId": "fltveh_vphjyzcl6bhyvku5l6oap2iiqq",
+  "fleetDriverId": "fltdrv_bezvvs2fcrhalivycd77cwwy7a",	
+  "startTime": "2021-01-10T00:00:00Z",
+  "endTime": "2021-02-10T00:00:00Z"
 }
 ```
 
@@ -39,6 +39,23 @@ HTTP 201
   "policyId": "fltpol_yxsmj3dadfh7zaj5lvr3hsqeue",
   "fleetDriverId": "fltdrv_bezvvs2fcrhalivycd77cwwy7a",
   "fleetVehicleId": "fltveh_vphjyzcl6bhyvku5l6oap2iiqq"
+}
+```
+
+##### Example response not approved driver
+
+HTTP 400
+
+```
+{
+  "status": "NOK",
+  "error": "INVALID_DATA",
+  "message": "Invalid data format",
+  "detail": {
+    "fleetDriverId": [
+      "The driver does not meet the underwriting criteria for the policy."
+    ]
+  }
 }
 ```
 
