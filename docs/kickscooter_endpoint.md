@@ -16,6 +16,7 @@
 | kickscooter.model | string | Yes | e.g Accord |
 | kickscooter.year | int | Yes | Accepts values between 1950 and the current year + 1 |
 | kickscooter.valuation | int | Yes |  |
+| kickscooter.type | string | Yes | e.g `electric_kick_scooter` or `electric_bike` |
 
 ##### Example body
 
@@ -26,7 +27,8 @@
         "make": "Xiaomi",
         "model": "M365", 
         "year": 2018, 
-        "valuation": 400
+        "valuation": 400,
+        "type": "electric_kick_scooter"
     },
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
@@ -49,7 +51,8 @@ HTTP 201
         "make": "Xiaomi",
         "model": "M365", 
         "year": 2018, 
-        "valuation": 400
+        "valuation": 400,
+        "type": "electric_kick_scooter"
     },
 }
 ```
@@ -88,7 +91,8 @@ curl --request POST \
         "make": "Xiaomi",
         "model": "M365", 
         "year": 2018, 
-        "valuation": 400
+        "valuation": 400,
+        "type": "electric_kick_scooter"
     },
 }'
 ```
@@ -112,7 +116,8 @@ HTTP 200
         "make": "Xiaomi",
         "model": "M365", 
         "year": 2018, 
-        "valuation": 400
+        "valuation": 400,
+        "type": "electric_kick_scooter"
     },
 }
 ```
@@ -144,7 +149,8 @@ HTTP 200
         "make": "Xiaomi",
         "model": "M365", 
         "year": 2018, 
-        "valuation": 400
+        "valuation": 400,
+        "type": "electric_kick_scooter"
     },
 }
 ```
@@ -190,7 +196,8 @@ HTTP 200
           "make": "Xiaomi",
           "model": "M365", 
           "year": 2018, 
-          "valuation": 400
+          "valuation": 400,
+          "type": "electric_kick_scooter"
       },
 }
 ```
@@ -228,7 +235,8 @@ HTTP 200
           "make": "Xiaomi",
           "model": "M365", 
           "year": 2018, 
-          "valuation": 400
+          "valuation": 400,
+          "type": "electric_kick_scooter"
       },
 }
 ```
