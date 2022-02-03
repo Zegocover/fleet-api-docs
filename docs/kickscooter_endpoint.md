@@ -23,16 +23,16 @@
 ```
 {
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
         "type": "electric_kick_scooter"
     },
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
-    "city": "London",
+    "city": "London"
 }
 ```
 
@@ -47,13 +47,13 @@ HTTP 201
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
         "type": "electric_kick_scooter"
-    },
+    }
 }
 ```
 
@@ -87,13 +87,13 @@ curl --request POST \
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
         "type": "electric_kick_scooter"
-    },
+    }
 }'
 ```
 
@@ -112,13 +112,13 @@ HTTP 200
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
         "type": "electric_kick_scooter"
-    },
+    }
 }
 ```
 
@@ -145,13 +145,13 @@ HTTP 200
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
         "type": "electric_kick_scooter"
-    },
+    }
 }
 ```
 
@@ -191,14 +191,14 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2020-1-10T20:00:00+00:00",
     "city": "London",
-      "kickScooter": {
-          "serialNumber": "1234ABCD", 
-          "make": "Xiaomi",
-          "model": "M365", 
-          "year": 2018, 
-          "valuation": 400,
-          "type": "electric_kick_scooter"
-      },
+    "kickScooter": {
+        "serialNumber": "1234ABCD",
+        "make": "Xiaomi",
+        "model": "M365",
+        "year": 2018,
+        "valuation": 400,
+        "type": "electric_kick_scooter"
+    }
 }
 ```
 
@@ -230,14 +230,14 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2020-1-10T20:00:00+00:00",
     "city": "London",
-      "kickScooter": {
-          "serialNumber": "1234ABCD", 
-          "make": "Xiaomi",
-          "model": "M365", 
-          "year": 2018, 
-          "valuation": 400,
-          "type": "electric_kick_scooter"
-      },
+    "kickScooter": {
+        "serialNumber": "1234ABCD",
+        "make": "Xiaomi",
+        "model": "M365",
+        "year": 2018,
+        "valuation": 400,
+        "type": "electric_kick_scooter"
+    }
 }
 ```
 
