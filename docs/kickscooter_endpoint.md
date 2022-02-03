@@ -28,7 +28,9 @@
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     },
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
@@ -52,7 +54,9 @@ HTTP 201
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     }
 }
 ```
@@ -92,7 +96,9 @@ curl --request POST \
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     }
 }'
 ```
@@ -117,7 +123,9 @@ HTTP 200
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     }
 }
 ```
@@ -150,7 +158,9 @@ HTTP 200
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     }
 }
 ```
@@ -159,7 +169,42 @@ HTTP 200
 
 ```
 curl --request GET \
-  --url http://api.zego.com/v2/fleet/kickscooter/11/ \
+  --url http://api.zego.com/v2/fleet/kickscooter/search?serialNumber=1234ABCD \
+  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
+```
+
+### Search Kick Scooter By Sticker Code
+
+`GET /v2/fleet/kickscooter/search?stickerCode=:kickscooterStickerCode`
+
+##### Example response
+
+HTTP 200
+
+```
+{
+    "id": 11,
+    "coverStartsAt": "2019-10-10T10:00:00+00:00",
+    "coverEndsAt": "2019-10-10T20:00:00+00:00",
+    "city": "London",
+    "kickScooter": {
+        "serialNumber": "1234ABCD",
+        "make": "Xiaomi",
+        "model": "M365",
+        "year": 2018,
+        "valuation": 400,
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
+}
+```
+
+##### Example CURL
+
+```
+curl --request GET \
+  --url http://api.zego.com/v2/fleet/kickscooter/search?stickerCode=sticker_code_1 \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
@@ -197,7 +242,9 @@ HTTP 200
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     }
 }
 ```
@@ -236,7 +283,9 @@ HTTP 200
         "model": "M365",
         "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     }
 }
 ```

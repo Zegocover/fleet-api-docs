@@ -18,11 +18,11 @@ The duration object represents a period of time that a vehicle was in use. This 
 ##### Example body
 
 ```
-{ 
-  "vehicleId": 833, 
-  "startsAt": "2019-07-10T10:00:00+00:00", 
+{
+  "vehicleId": 833,
+  "startsAt": "2019-07-10T10:00:00+00:00",
   "endsAt": "2019-07-11T10:00:00+00:00",
-  "externalId": "JCG5PPOIOL", 
+  "externalId": "JCG5PPOIOL"
 }
 ```
 
@@ -31,15 +31,15 @@ The duration object represents a period of time that a vehicle was in use. This 
 HTTP 201
 
 ```
-{ 
-  "message": "Duration created!", 
-  "status": "OK", 
+{
+  "message": "Duration created!",
+  "status": "OK",
   "duration": {
-      "id": 12
-      "vehicleId": 833, 
-      "startsAt": "2019-10-10T10:00:00+00:00", 
-      "endsAt": "2019-10-11T10:00:00+00:00", 
-      "externalId": "JCG5PPOIOL", 
+    "id": 12,
+    "vehicleId": 833,
+    "startsAt": "2019-10-10T10:00:00+00:00",
+    "endsAt": "2019-10-11T10:00:00+00:00",
+    "externalId": "JCG5PPOIOL"
   }
 }
 ```
