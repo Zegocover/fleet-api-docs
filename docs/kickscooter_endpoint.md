@@ -6,17 +6,19 @@
 
 #### Request body
 
-| Key | Type | Required | Notes |
-| --- | --- | --- | --- |
-| coverStartsAt | iso-8601 string | No |  |
-| city | string | No |  |
-| coverEndsAt | iso-8601 string | No |  |
-| kickscooter.serialNumber | string | Yes |  |
-| kickscooter.make | string | Yes | e.g. Honda |
-| kickscooter.model | string | Yes | e.g Accord |
-| kickscooter.year | int | Yes | Accepts values between 1950 and the current year + 1 |
-| kickscooter.valuation | int | Yes |  |
-| kickscooter.type | string | Yes | e.g `electric_kick_scooter` or `electric_bike` |
+| Key | Type | Required | Notes                                                                                                 |
+| --- | --- |----------|-------------------------------------------------------------------------------------------------------|
+| coverStartsAt | iso-8601 string | No       |                                                                                                       |
+| city | string | No       |                                                                                                       |
+| coverEndsAt | iso-8601 string | No       |                                                                                                       |
+| kickscooter.serialNumber | string | Yes      |                                                                                                       |
+| kickscooter.make | string | Yes      | e.g. Honda                                                                                            |
+| kickscooter.model | string | Yes      | e.g Accord                                                                                            |
+| kickscooter.year | int | Yes      | Accepts values between 1950 and the current year + 1                                                  |
+| kickscooter.valuation | int | Yes      |                                                                                                       |
+| kickscooter.type | string | Yes      | e.g `electric_kick_scooter` or `electric_bike`                                                        |
+| kickscooter.stickerCode | string | No       | e.g `Temporary identity in addition to serialNumber` <br/> This field may be modified via PUT         |
+| kickscooter.metadata | string | No       | e.g `unspecified additional vehicle data field for API User` <br/> This field may be modified via PUT |
 
 ##### Example body
 
