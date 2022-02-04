@@ -6,33 +6,37 @@
 
 #### Request body
 
-| Key | Type | Required | Notes |
-| --- | --- | --- | --- |
-| coverStartsAt | iso-8601 string | No |  |
-| city | string | No |  |
-| coverEndsAt | iso-8601 string | No |  |
-| kickscooter.serialNumber | string | Yes |  |
-| kickscooter.make | string | Yes | e.g. Honda |
-| kickscooter.model | string | Yes | e.g Accord |
-| kickscooter.year | int | Yes | Accepts values between 1950 and the current year + 1 |
-| kickscooter.valuation | int | Yes |  |
-| kickscooter.type | string | Yes | e.g `electric_kick_scooter` or `electric_bike` |
+| Key | Type | Required | Notes                                                                                                 |
+| --- | --- |----------|-------------------------------------------------------------------------------------------------------|
+| coverStartsAt | iso-8601 string | No       |                                                                                                       |
+| city | string | No       |                                                                                                       |
+| coverEndsAt | iso-8601 string | No       |                                                                                                       |
+| kickscooter.serialNumber | string | Yes      |                                                                                                       |
+| kickscooter.make | string | Yes      | e.g. Honda                                                                                            |
+| kickscooter.model | string | Yes      | e.g Accord                                                                                            |
+| kickscooter.year | int | Yes      | Accepts values between 1950 and the current year + 1                                                  |
+| kickscooter.valuation | int | Yes      |                                                                                                       |
+| kickscooter.type | string | Yes      | e.g `electric_kick_scooter` or `electric_bike`                                                        |
+| kickscooter.stickerCode | string | No       | e.g `Temporary identity in addition to serialNumber` <br/> This field may be modified via PUT         |
+| kickscooter.metadata | string | No       | e.g `unspecified additional vehicle data field for API User` <br/> This field may be modified via PUT |
 
 ##### Example body
 
 ```
 {
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
     },
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
-    "city": "London",
+    "city": "London"
 }
 ```
 
@@ -47,13 +51,15 @@ HTTP 201
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
-    },
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }
 ```
 
@@ -87,13 +93,15 @@ curl --request POST \
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
-    },
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }'
 ```
 
@@ -112,13 +120,15 @@ HTTP 200
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
-    },
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }
 ```
 
@@ -145,13 +155,15 @@ HTTP 200
     "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "city": "London",
     "kickScooter": {
-        "serialNumber": "1234ABCD", 
+        "serialNumber": "1234ABCD",
         "make": "Xiaomi",
-        "model": "M365", 
-        "year": 2018, 
+        "model": "M365",
+        "year": 2018,
         "valuation": 400,
-        "type": "electric_kick_scooter"
-    },
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }
 ```
 
@@ -159,7 +171,42 @@ HTTP 200
 
 ```
 curl --request GET \
-  --url http://api.zego.com/v2/fleet/kickscooter/11/ \
+  --url http://api.zego.com/v2/fleet/kickscooter/search?serialNumber=1234ABCD \
+  --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
+```
+
+### Search Kick Scooter By Sticker Code
+
+`GET /v2/fleet/kickscooter/search?stickerCode=:kickscooterStickerCode`
+
+##### Example response
+
+HTTP 200
+
+```
+{
+    "id": 11,
+    "coverStartsAt": "2019-10-10T10:00:00+00:00",
+    "coverEndsAt": "2019-10-10T20:00:00+00:00",
+    "city": "London",
+    "kickScooter": {
+        "serialNumber": "1234ABCD",
+        "make": "Xiaomi",
+        "model": "M365",
+        "year": 2018,
+        "valuation": 400,
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
+}
+```
+
+##### Example CURL
+
+```
+curl --request GET \
+  --url http://api.zego.com/v2/fleet/kickscooter/search?stickerCode=sticker_code_1 \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
@@ -191,14 +238,16 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2020-1-10T20:00:00+00:00",
     "city": "London",
-      "kickScooter": {
-          "serialNumber": "1234ABCD", 
-          "make": "Xiaomi",
-          "model": "M365", 
-          "year": 2018, 
-          "valuation": 400,
-          "type": "electric_kick_scooter"
-      },
+    "kickScooter": {
+        "serialNumber": "1234ABCD",
+        "make": "Xiaomi",
+        "model": "M365",
+        "year": 2018,
+        "valuation": 400,
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }
 ```
 
@@ -230,14 +279,16 @@ HTTP 200
     "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "coverEndsAt": "2020-1-10T20:00:00+00:00",
     "city": "London",
-      "kickScooter": {
-          "serialNumber": "1234ABCD", 
-          "make": "Xiaomi",
-          "model": "M365", 
-          "year": 2018, 
-          "valuation": 400,
-          "type": "electric_kick_scooter"
-      },
+    "kickScooter": {
+        "serialNumber": "1234ABCD",
+        "make": "Xiaomi",
+        "model": "M365",
+        "year": 2018,
+        "valuation": 400,
+        "type": "electric_kick_scooter",
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }
 ```
 
