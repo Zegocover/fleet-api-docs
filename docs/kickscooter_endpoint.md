@@ -219,12 +219,19 @@ curl --request GET \
 | **key** | **type** | required | **notes** |
 | --- | --- | --- | --- |
 | coverEndsAt | iso-8601 | Yes | string |
+| kickscooter.stickerCode | string | No  |    
+| kickscooter.metadata | string | No    |
+
 
 ##### Example body
 
 ```
 {
-    "coverEndsAt": "2020-1-10T20:00:00+00:00"
+    "coverEndsAt": "2020-1-10T20:00:00+00:00",
+    "kickScooter": {
+        "stickerCode": "sticker_code_1",
+        "metadata": "metadata info"
+    }
 }
 ```
 
