@@ -218,7 +218,7 @@ curl --request GET \
 
 | **key** | **type** | required | **notes** |
 | --- | --- | --- | --- |
-| coverEndsAt | iso-8601 | Yes | string |
+| coverEndsAt | iso-8601 | No | string |
 | kickscooter.stickerCode | string | No  |    
 | kickscooter.metadata | string | No    |
 
