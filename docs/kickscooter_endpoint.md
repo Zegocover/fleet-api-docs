@@ -8,7 +8,7 @@
 
 | Key | Type | Required | Notes                                                                                                 |
 | --- | --- |----------|-------------------------------------------------------------------------------------------------------|
-| coverStartsAt | iso-8601 string | No       |                                                                                                       |
+| coverStartsAt | iso-8601 string | No       | If not provided in the POST message the vehicle will be created using the current date and time.                                                                     |
 | city | string | No       |                                                                                                       |
 | coverEndsAt | iso-8601 string | No       |                                                                                                       |
 | kickscooter.serialNumber | string | Yes      |                                                                                                       |
