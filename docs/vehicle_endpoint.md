@@ -2,7 +2,7 @@
 
 ### Create Vehicle
 
-Create a vehicle and add it to your fleet. The **coverStartsAt** field represents when you would like the vehicle added to your policy and for the cover to start.
+Add a new vehicle to your fleet
 
 `POST /v2/fleet/vehicle/`
 
@@ -10,9 +10,7 @@ Create a vehicle and add it to your fleet. The **coverStartsAt** field represent
 
 | Key | Type | Required | Notes |
 | --- | --- | --- | --- |
-| coverStartsAt | iso-8601 string  | No |  |
 | city | string  | No |  |
-| coverEndsAt | iso-8601 string  | No |  |
 | uberType | enum  | No | one of: “uber_x”, “uber_xl”, “uber_exec”, “uber_lux”  |
 | ownerCompanyId | string  | No |  **ID** of the company that owns the vehicle. See [company](./company_endpoint.md) documentation. |
 | vehicle.registrationNumber | string  | Yes |  |
@@ -40,9 +38,7 @@ Create a vehicle and add it to your fleet. The **coverStartsAt** field represent
         "type": "car",
         "seats": 9
     },
-    "coverStartsAt": "2019-10-10T10:00:00+00:00",
     "city": "London",
-    "coverEndsAt": "2019-10-10T20:00:00+00:00",
     "uberType": "uber_x",
     "ownerCompanyId": "fltcom_be3nayyhqbgknoou3nl6oe77rq"
 }
@@ -101,7 +97,6 @@ HTTP 200
 
 ```
 {
-  "coverStartsAt": "2019-10-10 10:00:00+00:00",
   "vehicle": {
     "type": "car",
     "seats": 9,
@@ -142,14 +137,12 @@ HTTP 401
 
 | **key** | **type** | required | **notes** |
 | --- | --- | --- | --- |
-| coverEndsAt | iso-8601  | No | string  |
 | vehicle.valuation | int  | No | e.g 22000 |
 
 ##### Example body
 
 ```
 {
-    "coverEndsAt": "2019-10-10T20:00:00+00:00"
     "vehicle": {
         "valuation": 10000
     }
@@ -163,7 +156,6 @@ HTTP 200
 ```
 {
   "city": "London",
-  "coverEndsAt": "2019-10-10T20:00:00+00:00",
   "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
   "vehicle": {
     "engineSize": 1000,
@@ -175,7 +167,6 @@ HTTP 200
     "model": "Yaris",
     "year": 2010
   },
-  "coverStartsAt": "2019-10-10T10:00:00+00:00"
 }
 ```
 
@@ -203,9 +194,7 @@ HTTP 200
   },
   "city": "London",
   "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
-  "coverEndsAt": "2019-07-01T13:50:11.635258+00:00",
   "uberType": "uber_x",
-  "coverStartsAt": "2019-07-01T13:49:23.546984+00:00"
 }
 ```
 
@@ -221,7 +210,6 @@ HTTP 200
 {
   "fleet_vehicles": [
     {
-      "coverEndsAt": "2019-07-01T13:50:11.635258+00:00",
       "city": "London",
       "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
       "vehicle": {
@@ -235,10 +223,8 @@ HTTP 200
           "year": 2010
       },
       "uberType": "uber_x",
-      "coverStartsAt": "2019-07-01T13:49:23.546984+00:00"
     },
     {
-      "coverEndsAt": null,
       "city": "London",
       "id": "fltveh_hhz2wvyhdrgnzlt3pc2li24xmm",
       "vehicle": {
@@ -252,7 +238,6 @@ HTTP 200
           "year": 2010
       },
       "uberType": "uber_x",
-      "coverStartsAt": "2019-07-01T13:16:12.675830+00:00"
       }
   ]
 }
