@@ -8,12 +8,12 @@ The duration object represents a period of time that a vehicle was in use. This 
 
 #### Request body
 
-| Key | Type | Required | Notes |
-| --- | --- | --- | --- |
-| vehicleId | int | Yes |  |
-| startsAt | iso-8601 string | Yes |  |
-| endsAt | iso-8601 string | Yes |  |
-| externalId | string | No |  |
+| Key | Type | Required | Notes                                                                                                                                                                                                  |
+| --- | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| vehicleId | int | Yes |                                                                                                                                                                                                        |
+| startsAt | iso-8601 string | Yes |                                                                                                                                                                                                        |
+| endsAt | iso-8601 string | Yes |                                                                                                                                                                                                        |
+| externalId | string | No | Do not provide this field in the JSON message unless necessary. It is not searchable once written. <br><br> Data in this field must be unique for each duration record. Use a UUID formated reference. |
 
 ##### Example body
 
