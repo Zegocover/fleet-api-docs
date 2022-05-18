@@ -1,6 +1,6 @@
 ## Authentication
 
-Authenticating with the API requires a token to be set as the AUTHORIZATION header value. The token can requested from your Zego Partnerships Manager. Each fleet will have its own authentication token, so if you are managing multiple fleets make sure to use the correct token in each request.
+Authenticating with the API requires a token to be set as the AUTHORIZATION header value. The token can be requested from your Zego Partnerships Manager. Each fleet will have its own authentication token, so if you are managing multiple fleets make sure to use the correct token in each request.
 
 ##### Example header
 
