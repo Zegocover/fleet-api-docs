@@ -1,17 +1,6 @@
 ## Available endpoints
 
 * [Authentication](./docs/authentication.md)
-* [Vehicle](./docs/vehicle_endpoint.md)
-* [Driver](./docs/driver_endpoint.md)
-    * [Declared Claims](./docs/driver_declared_claims_endpoint.md)
-        * [Claim Types](./docs/claim_types.md)
-        * [Fault Types](./docs/fault_types.md)
-    * [Declared Convictions](./docs/driver_declared_convictions_endpoint.md)
-        * [Conviction Types](./docs/conviction_types.md)
-    * [Licence Types](./docs/licence_types.md)
-* [Policy](./docs/policy_endpoint.md)
-    * [Check Driver](./docs/policy_check_driver.md)
-* [Driver Authorisations](./docs/driver_authorisation_endpoint.md)
 * [Company](./docs/company_endpoint.md)
 * [KickScooter](./docs/kickscooter_endpoint.md)
 * [Trip](./docs/vehicle_trip_endpoint.md)
