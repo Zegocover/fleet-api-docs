@@ -17,7 +17,7 @@
 | kickscooter.year | int | Yes      | Accepts values between 1950 and the current year + 1                                                  |
 | kickscooter.valuation | int | Yes      |                                                                                                       |
 | kickscooter.type | string | Yes      | e.g `electric_kick_scooter` or `electric_bike`                                                        |
-| kickscooter.stickerCode | string | Yes       | e.g `Temporary identity in addition to serialNumber` <br/> This field may be modified via PUT <br/> This field is required for Germany(DE) Scooters        |
+| kickscooter.stickerCode | string | Yes (DE only) | e.g `Temporary identity in addition to serialNumber` <br/> This field may be modified via PUT <br/> This field is required for Germany(DE) Scooters        |
 | kickscooter.metadata | string | No       | e.g `unspecified additional vehicle data field for API User` <br/> This field may be modified via PUT |
 
 ##### Example body
