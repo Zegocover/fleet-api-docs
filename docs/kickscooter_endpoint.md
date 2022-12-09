@@ -86,7 +86,7 @@ HTTP 404
 
 ```
 curl --request POST \
-  --url http://api.zego.com/v2/fleet/kickscooter/ \
+  --url https://fleet-api-v2.zego.com/v2/fleet/kickscooter/ \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
   --header 'content-type: application/json' \
   --data '{
@@ -136,7 +136,7 @@ HTTP 200
 
 ```
 curl --request GET \
-  --url http://api.zego.com/v2/fleet/kickscooter/11/ \
+  --url https://fleet-api-v2.zego.com/v2/fleet/kickscooter/11/ \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
@@ -171,7 +171,7 @@ HTTP 200
 
 ```
 curl --request GET \
-  --url http://api.zego.com/v2/fleet/kickscooter/search?serialNumber=1234ABCD \
+  --url https://fleet-api-v2.zego.com/v2/fleet/kickscooter/search?serialNumber=1234ABCD \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
@@ -206,7 +206,7 @@ HTTP 200
 
 ```
 curl --request GET \
-  --url http://api.zego.com/v2/fleet/kickscooter/search?stickerCode=sticker_code_1 \
+  --url https://fleet-api-v2.zego.com/v2/fleet/kickscooter/search?stickerCode=sticker_code_1 \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590'
 ```
 
@@ -262,7 +262,7 @@ HTTP 200
 
 ```
 curl --request PUT \
-  --url http://api.zego.com/v2/fleet/kickscooter/12/ \
+  --url https://fleet-api-v2.zego.com/v2/fleet/kickscooter/12/ \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
   --header 'content-type: application/json' \
   --data '{
@@ -303,6 +303,6 @@ HTTP 200
 
 ```
 curl --request DELETE \
-  --url http://api.zego.com/v2/fleet/kickscooter/12/ \
+  --url https://fleet-api-v2.zego.com/v2/fleet/kickscooter/12/ \
   --header 'authorization: 357e80a5-f9d5-4368-86f4-e1edfd2ea590' \
 ```
